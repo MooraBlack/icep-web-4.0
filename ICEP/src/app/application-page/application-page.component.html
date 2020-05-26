@@ -1,0 +1,117 @@
+ <!-- Modal -->
+  <!-- lunch button uses id as referrence -->
+  <div class="modal fade" id="Application" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-light justify-content-center">
+          <h5 class="modal-title">ICEP Application Form</h5>
+        </div>
+
+        <form >
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label >First Name</label>
+              <input type="text" name="fname" class="form-control" placeholder="Enter Your First Name" required>
+            </div>
+
+           <br>
+
+            <div class="form-group">
+              <label >Last Name</label>
+              <input type="text" name="lname" class="form-control" placeholder="Enter Your Last Name" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+              <label >Email address</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your Email" required>
+              </div>
+              <br>
+
+              <div class="form-group label-floating">
+                <label class="control-label">ID/Passport number</label>
+                <br>
+                <input id="ID_passport" name="lastname" ng-model="applicant_IDPassport" required="required" type="text" class="form-control" required>
+              </div>
+
+              <br>
+
+              <div class="form group">
+                    <label class="control-label">Gender</label>
+                    <select id="applicant_gender" name="applicant_gender" ng-model="applicant_Gender" required="required" class="form-control" required>
+                        <option disabled="" selected=""></option>
+                        <option>Male</option>
+                        <option>Female </option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="form group">
+                    <label class="control-label">Specialization</label>
+                    <select id="applicant_specialization" name="applicant_specialization" ng-model="applicant_specialization" required="required" class="form-control" required>
+                        <option disabled="" selected=""></option>
+                        <option>Business Application</option>
+                        <option>Multimedia </option>
+                        <option>Software Development </option>
+                        <option>Web And Application Development </option>
+                    </select>
+                </div>
+
+            <br>
+
+            <div class="form-group">
+                <label >Mobile Number</label>
+                <input type="mobile-number" class="form-control" placeholder="Enter your mobile number" required>
+              </div>
+
+              <br>
+
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <!--<i class="material-icons">computer</i>-->
+                </span>
+                <div class="form-group label-floating">
+                  <label class="control-label">Which programming languages do you have experience in? </label>
+                  <br>
+                  <textarea id="applicant_programming_language" name="applicant_programming_language" ng-model="applicant_Programming_Languages" class="form-control" required placeholder="" rows="3"></textarea>
+                </div>
+              </div>
+
+              <br>
+
+           
+              <!-- <form method = "post" enctype="multipart/form-data" action="/">
+                <input type="file" name="filename">
+                <input type="submit" value="upload">
+             </form> -->
+            
+             <form method = "post" enctype="multipart/form-data" action="/">
+             <div class="custom-file">
+              <input type="file" name="filename" class="custom-file-input" id="validatedCustomFile" required multiple>
+              <label class="custom-file-label" for="validatedCustomFile">Choose files...</label>
+              <input type="submit" value="Upload Documents">
+            </div>
+            </form>
+            
+             <div class="form-group">
+             <h6>
+              <small id="emailHelp" class="note">Doc's required: CV, Academic Record, Recommendation Letter</small>
+            </h6>
+            </div>
+             <!-- <br> -->
+               
+          </div>
+          
+        <div class="modal-footer justify-content-center">
+          <button type="apply" class="btn btn-primary">Submit Application</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal end -->

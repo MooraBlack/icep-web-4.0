@@ -1,0 +1,13 @@
+/* Leaders */
+.row-3{
+    display: flex;
+  }
+    .row-3 img {
+      padding-top: 20px;
+      border-radius: 50%;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    } 
+  
+  /* End Leaders */
