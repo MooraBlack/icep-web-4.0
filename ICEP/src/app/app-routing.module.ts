@@ -30,7 +30,7 @@ const routes: Routes = [
   {path:'ad-posts', component: AdPostsComponent},
   {path:'about-page', component: AboutPageComponent},
   {path:'services-page', component: ServicesPageComponent},
-  {path:'contacs-page', component: ContactsPageComponent},
+  {path:'contacts-page', component: ContactsPageComponent},
   {path:'projects-page', component: ProjectsPageComponent},
   {path:'login-page', component: LoginPageComponent},
   {path:'register-page', component: RegisterPageComponent},
