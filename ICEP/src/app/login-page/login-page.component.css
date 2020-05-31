@@ -1,0 +1,15 @@
+
+h1
+{
+    text-align: center;
+}
+
+.mx-auto
+{
+    image-orientation: unset;
+}
+nav
+{
+  display: flex;
+  justify-content: center;
+}

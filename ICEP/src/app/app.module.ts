@@ -23,6 +23,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ApplicationPageComponent } from './application-page/application-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RegisterPageComponent,
     ApplicationPageComponent,
     DashboardComponent,
+    GalleryComponent,
      ],
   imports: [
     BrowserModule,

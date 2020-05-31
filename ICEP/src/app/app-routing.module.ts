@@ -16,6 +16,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ApplicationPageComponent } from './application-page/application-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,9 @@ const routes: Routes = [
   {path:'login-page', component: LoginPageComponent},
   {path:'register-page', component: RegisterPageComponent},
   {path:'application-page', component: ApplicationPageComponent},
-  {path:'dashboard', component: DashboardComponent}
+  {path:'dashboard', component: DashboardComponent},
+  {path:'gallery', component: GalleryComponent}
+
 ];
 
 @NgModule({
