@@ -24,6 +24,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { ApplicationPageComponent } from './application-page/application-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     ApplicationPageComponent,
     DashboardComponent,
     GalleryComponent,
+    AdminLoginPageComponent,
      ],
   imports: [
     BrowserModule,

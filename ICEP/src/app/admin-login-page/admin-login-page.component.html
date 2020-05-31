@@ -1,0 +1,33 @@
+<div class="dash-page">
+    <div class="text-center">
+      <a routerLink="/"><img  src="/assets/pictures/ICEP-Logo.png" alt="" width="150" height="150"></a>  
+  </div>
+
+    <nav>
+      <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
+      <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
+      <a class="nav-link" routerLink="/login-page" routerLinkActive="router-link-active">User Login</a>
+    </nav>
+    <hr class="divider mx-8">
+    <h6>Admin Login</h6>
+    <div>
+      <form class="form-signin">
+        <div class="form-label-group">
+          <label for="inputEmail">Admin_ID</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="###########" required autofocus>
+          
+        </div>
+  
+        <div class="form-label-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="********************" required>
+        </div>
+        <br>
+        <button class="btn btn-lg btn-danger btn-block" type="submit">Sign in</button>
+        <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p> -->
+      </form>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+  

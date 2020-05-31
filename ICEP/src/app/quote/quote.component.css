@@ -1,9 +1,7 @@
-.aw
+.row-q
 {
-   height: 30vh; 
-}
-
-.row_inner_wrapper
-{
-    justify-content: center;
+    display: flex;
+    margin:20px 0 20px 0;
+    height: 20vh; 
+    background-color: rgb(144, 144, 144);
 }

@@ -1,10 +1,29 @@
-<div class="dash-page">
-    <h1><img src="/assets/pictures/ICEP-Logo.png" alt="Logo" style="width:80px;">  Welcome To ICEP DashBoard</h1>
-    <br>
-    <nav>    
-        <a class="nav-link" routerLink="/login-page"  routerLinkActive="router-link-active" >Login</a>
-        <a class="nav-link" routerLink="/regiter-page"  routerLinkActive="router-link-active" >Register</a>
-        <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>
-    </nav>
+<div class="dash-page ">
+    <!-- header -->
+    <div class="header justify-content-center">
+        <h3><a routerLink="/dashboard"><img src="/assets/pictures/ICEP-Logo.png" alt="Logo" style="width:80px;"></a>Welcome To ICEP Dashboard</h3>
+    </div>
+    
+
+    <!-- Sidebar -->
+    <div class="sidenav bg-dark">
+            <a class="nav-link" routerLink="/dashboard"  routerLinkActive="router-link-active" >Dashboard</a>
+            <a class="nav-link" routerLink="/login-page"  routerLinkActive="router-link-active" >Log</a>
+            <a class="nav-link" routerLink="/register-page"  routerLinkActive="router-link-active" >Report</a>
+            <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a> 
+
+            <!-- Footer -->
+            <div class="footer">
+                <app-footer></app-footer>
+            </div>
+    </div>
+    
+    <!-- main -->
+    <div class="main">
+                 
+    </div>
+   
+   
+    
 </div>
-<app-footer></app-footer>
+ 
