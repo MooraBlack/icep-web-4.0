@@ -1,13 +1,26 @@
 /* Leaders */
-.row-3{
-    display: flex;
-  }
-    .row-3 img {
-      padding-top: 20px;
-      border-radius: 50%;
-      padding-bottom: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-    } 
+.team
+{
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(144, 144, 144);
+  color: white;
+}
+.row-3
+{
+  display: flex;
   
+}
+     
+.row-3 img {
+    padding-top: 20px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   /* End Leaders */

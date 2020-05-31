@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { MainComponent } from './main/main.component';
 import { QuoteComponent } from './quote/quote.component';
 import { AdPostsComponent } from './ad-posts/ad-posts.component';
@@ -19,8 +20,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 
+
 const routes: Routes = [
   {path:'',redirectTo:'home-page', pathMatch:'full'},
+  {path:'admin-login-page', component: AdminLoginPageComponent},
   {path:'home-page', component: HomePageComponent},
   {path:'main', component: MainComponent},
   {path:'quote', component: QuoteComponent},

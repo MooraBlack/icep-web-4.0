@@ -1,0 +1,41 @@
+
+h1
+{
+    text-align: center;
+}
+
+.mx-auto
+{
+    image-orientation: unset;
+}
+nav
+{
+  display: flex;
+  justify-content: center;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+form
+{
+  margin: 0px 465px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}

@@ -1,53 +1,58 @@
 <div class="page">
-    <app-header></app-header>
+  <app-header></app-header>
 
-    <div class="rowM">
-        <div class="col">
-          <div>
-            <h3>Contact Us</h3>
-          </div>
-          <br>
-        <div >
-          <label for="email">Email:</label><p>Phurutsimb@tut.ac.za </p>
-          <label for="number">Contact Number:</label> <p>012 382 9796</p> 
-          <label for="address">Address:</label><p>2 Aubrey Matlakala</p> 
-           <p>Soshanguve, Pretoria</p>
-           Postal Code: <p>0152 </p>
+  <div class="rowM">
+    <div class="col">
+      <div>
+        <h3>Contact Us</h3>
+      </div>
+      <br>
+      <div>
+
+        <label for="email">Email: Phurutsimb@tut.ac.za </label>
+        <br>
+        <label for="number">Contact Number: 012 382 9796</label>
+        <br>
+        <label for="address">Address: 2 Aubrey Matlakala<br>
+          <p>Soshanguve, Pretoria</p>
+          Postal Code: <p>0152 </p>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col ">
+      <div class="mapouter">
+        <div class="gmap_canvasX">
+          <iframe width="620" height="500"
+            src="https://maps.google.com/maps?q=tshwane%20university%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
         </div>
-      </div> 
-
-       <div class ="col">
-          <div class="mapouter">
-            <div class="gmap_canvasX">
-              <iframe width="700" height="500"  src="https://maps.google.com/maps?q=tshwane%20university%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-              </iframe>
-            </div>
-          </div>
-      </div> 
+      </div>
+    </div>
   </div>
 
   <div class="Sbj-head" style="text-align:center">
     <h3 class="text-light">For Enquiries</h3>
   </div>
-      <div class="container">
-        <div class="row">
-          <div class="column">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              <label for="email">E mail</label>
-              <input type="text" id="email" name="email" placeholder="Your E mail..">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Your Subject..">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Send">
-            </form>
-          </div>
-        </div>
-      </div>
+  <div class="cont-infor justify-content-center">
+
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." /><br>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." /><br>
+      <label for="email">E mail</label>
+      <input type="text" id="email" name="email" placeholder="Your E mail.." /><br>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Your Subject.." /><br>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+      <input type="submit" value="Send" />
+    </form>
+
+  </div>
 
   <app-footer></app-footer>
 </div>
