@@ -1,67 +1,45 @@
-<div class="dash-page">
-  <!-- Modal -->
-  <!-- lunch button uses id as referrence -->
-  <div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="icepRegisterUser"
-    aria-hidden="true">
-    <div class="modal-dialog modal-ls" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-light justify-content-center">
-          <h5 class="modal-title ">ICEP Registration</h5>
-        </div>
-        <form>
-          <div class="modal-body">
-
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" formControlName="fname" ngModel class="form-control"
-                placeholder="Enter Your First Name" required/>
-            </div>
-
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" formControlName="lname" ngModel class="form-control"
-                placeholder="Enter Your Last Name" required/>
-            </div>
-
-
-            <div class="form-group">
-              <label>Email address</label>
-              <input type="email" formControlName="email" ngModel class="form-control" aria-describedby="emailHelp"
-                placeholder="Enter your Email" required/>
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                else.</small>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label>Password</label>
-                  <input type="password" formControlName="pword" ngModel class="form-control"
-                    placeholder="Enter Secret Password" required/>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Confirm Password</label>
-                  <input type="password" formControlName="pword2" ngModel class="form-control"
-                    placeholder="Re-enter Secret Password" required/>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-          <div class="modal-footer justify-content-center">
-            <button type="submit" class="btn" value="submit">Submit</button>
-            <a href="login" class="btn btn-link">Login here</a>
-            <!-- (click)="postApplication() -->
-          </div>
-        </form>
+<!-- Modal -->
+<!-- lunch button uses id as referrence -->
+<div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-ls" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary text-dark justify-content-center">
+        <h5 class="modal-title"> Registration  ICEP</h5>
       </div>
+
+      <form>
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" aria-describedby="email" placeholder="Enter your Email"
+              required/>
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" aria-describedby="password" placeholder="Enter your password"
+              required/>
+          </div>
+
+          <div class="form-group">
+            <label>Re-type Password</label>
+            <input type="password" class="form-control" aria-describedby="confrim password" placeholder="Confrim your password"
+              required/>
+          </div>
+          <br>
+
+
+        </div>
+
+        <div class="modal-footer justify-content-center">
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </form>
     </div>
   </div>
-
-  <!-- Modal end -->
-
-  <app-footer></app-footer>
 </div>
+
+<!-- Modal end -->
