@@ -2,9 +2,9 @@ a
 {
     color: honeydew;
 }
-a:active
+a:hover
 {
-    color: rgb(103, 103, 134);
+    color: black
 }
 
 .navbar
