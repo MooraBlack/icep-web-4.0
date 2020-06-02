@@ -1,4 +1,4 @@
-.rowM
+.row
 {
     display: flex;
     margin-top: 20px;
@@ -11,7 +11,10 @@
     color: white;
     background-color: rgb(144, 144, 144);
 }
-
+.col
+{
+  flex: 1;
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=email], input[type=text], select, textarea {

@@ -1,8 +1,9 @@
-.row-q
+.row
 {
-    /* display: flex; */
+    display: flex;
     margin:20px 0 20px 0;
-    height: 20vh; 
+    padding:20px 0 20px 0;
+    /* height: 20vh;  */
     background-color: rgb(144, 144, 144);
     color: white;
 }
@@ -28,7 +29,7 @@ h4 {
   
   @-webkit-keyframes slidein-left {
     from {
-      margin-left: 60%;
+      margin-left: 100%;
       width: 300%
     }
     to {
