@@ -18,7 +18,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { ApplicationPageComponent } from './application-page/application-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
-
+import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 
 
 const routes: Routes = [
@@ -40,7 +40,9 @@ const routes: Routes = [
   {path:'register-page', component: RegisterPageComponent},
   {path:'application-page', component: ApplicationPageComponent},
   {path:'dashboard', component: DashboardComponent},
-  {path:'gallery', component: GalleryComponent}
+  {path:'gallery', component: GalleryComponent},
+  {path:'email-feedbac', component: EmailFeedbackComponent}
+
 
 ];
 

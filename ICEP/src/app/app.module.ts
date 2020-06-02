@@ -25,6 +25,7 @@ import { ApplicationPageComponent } from './application-page/application-page.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
+import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.com
     DashboardComponent,
     GalleryComponent,
     AdminLoginPageComponent,
+    EmailFeedbackComponent,
      ],
   imports: [
     BrowserModule,
