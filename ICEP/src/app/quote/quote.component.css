@@ -18,7 +18,7 @@ h4 {
   
   @-moz-keyframes slidein-left {
     from {
-      margin-left: 100%;
+      margin-left: 0%;
       width: 300%
     }
     to {
@@ -29,7 +29,7 @@ h4 {
   
   @-webkit-keyframes slidein-left {
     from {
-      margin-left: 100%;
+      margin-left: 28%;
       width: 300%
     }
     to {
@@ -51,18 +51,18 @@ h4 {
       width: 300%
     }
     to {
-      margin-right: 75%;
+      margin-right: 0%;
       width: 100%;
     }
   }
   
   @-webkit-keyframes slidein-right {
     from {
-      margin-right: 75%;
+      margin-right: 0%;
       width: 300%
     }
     to {
-      margin-right: 75%;
+      margin-right: 0%;
       width: 100%;
     }
   }
