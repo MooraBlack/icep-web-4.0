@@ -17,3 +17,8 @@ a:hover
 {
   color: black;
 }
+
+.nav-link a:active
+{
+    color: white;
+}
