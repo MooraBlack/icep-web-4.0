@@ -10,6 +10,7 @@
   }
   
   ul {
+   
     list-style-type: none;
     margin:0;
     padding: 0;
@@ -36,13 +37,17 @@
     color: white;
     text-shadow: 0px 0px 10px  white;
   }
+  li
+  {
+     color: white;
+  }
   
   
   h3{
-    color: black;
+    color: white;
   }
   p{
-    color: black;
+    color:white;
     padding-left: 20px;
     padding-left: 20px;
   }
@@ -57,51 +62,51 @@
   .col1{
     flex: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(144, 144, 144);
    
   }
   .col1 p{
-    color: black;
+    color: white;
   }
   .col1 h3{
     color: white;
   }
   
   .col1:hover{
-    background-color: rgb(132, 155, 178);
+    background-color:rgb(95, 94, 94);
   }
   
   .col2{
     padding-top: 10px;
     flex: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(144, 144, 144);
     
   }
   .col2 p{
-    color: black;
+    color: white;
   }
   .col2 h3{
     color: white;
   }
   .col2:hover{
-    background-color:rgb(132, 155, 178);
+    background-color:rgb(95, 94, 94);
   }
   
   .col3{
     flex: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(144, 144, 144);
   
   }
   .col3 p{
-    color: black;
+    color: white;
   }
   .col3 h3{
     color: white;
   }
   .col3:hover{
-    background-color:rgb(132, 155, 178);
+    background-color:rgb(95, 94, 94);
   }
   
   
@@ -111,51 +116,51 @@
   .col4{
     flex: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(144, 144, 144);
    
   }
   .col4 p{
-    color: black;
+    color: white;
   }
   .col4 h3{
     color: white;
   }
   
   .col4:hover{
-    background-color: rgb(132, 155, 178);
+    background-color:rgb(95, 94, 94);
   }
   
   .col5{
     padding-top: 10px;
     flex: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(144, 144, 144);
     
   }
   .col5 p{
-    color: black;
+    color: white;
   }
   .col5 h3{
     color: white;
   }
   .col5:hover{
-    background-color:rgb(132, 155, 178);
+    background-color:rgb(95, 94, 94);
   }
   
   .col6{
     flex: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(144, 144, 144);
   
   }
   .col6 p{
-    color: black;
+    color: white;
   }
   .col6 h3{
     color: white;
   }
   .col6:hover{
-    background-color:rgb(132, 155, 178);
+    background-color:rgb(95, 94, 94);
   }
   
   
@@ -198,10 +203,10 @@
   
   
   h3{
-    color: black;
+    color: white;
   }
   p{
-    color: black;
+    color: white;
   }
   
   /* section  */
