@@ -10,9 +10,10 @@
  
   /* End Leaders */
 
-  .row-3
+  .row
 {
   display: flex;
+  justify-content: center;
   
 }
   
