@@ -11,6 +11,9 @@ a:hover
 {
   margin: 0px 0 5px 0;
   background-color: rgb(163, 160, 160);
+  top: 0;
+  overflow: hidden; 
+  /* position: fixed; */
 }
 
 .nav-link.log
