@@ -9,10 +9,11 @@ a:hover
 
 .navbar
 {
-  margin: 0px 0 5px 0;
+  margin: 0px 0px 10px 0px;
   background-color: rgb(163, 160, 160);
-  top: 0;
-  overflow: hidden; 
+  /* top: 0; */
+  /* overflow: hidden;  */
+  /* z-index: 0; */
   /* position: fixed; */
 }
 
@@ -25,3 +26,4 @@ a:hover
 {
     color: white;
 }
+

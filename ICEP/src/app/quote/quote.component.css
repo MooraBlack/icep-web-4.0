@@ -43,6 +43,8 @@ h4 {
     -webkit-animation-duration: 3s;
     -moz-animation-name: slidein-right;
     -webkit-animation-name: slidein-right;
+    font-family: "Brush Script MT", cursive; font-size: 26px;
+
   }
   
   @-moz-keyframes slidein-right {

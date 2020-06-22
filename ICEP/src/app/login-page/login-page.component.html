@@ -1,25 +1,29 @@
 <div class="dash-page">
   <div class="text-center">
-    <a routerLink="/"><img  src="/assets/pictures/ICEP-Logo.png" alt="" width="150" height="150"></a>  
-</div>
-  
+    <a routerLink="/"><img src="/assets/pictures/ICEP-Logo.png" alt="" width="150" height="150"></a>
+  </div>
+
   <nav>
     <hr class="divider my-4">
     <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
     <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
     <a class="nav-link" routerLink="/login-page" routerLinkActive="router-link-active">Login</a>
-    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Application" >Apply</a>
-    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Registration" >Register</a>
+    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Application">Apply</a>
+    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Registration">Register</a>
     <hr class="divider my-4">
   </nav>
+
   <hr class="divider mx-8">
   <h6>User Login</h6>
+
   <div>
+
     <form class="form-signin">
+
       <div class="form-label-group">
         <label for="inputEmail">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        
+
       </div>
 
       <div class="form-label-group">
@@ -32,11 +36,14 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
+      
       <button class="btn btn-lg btn-dark btn-block" type="submit">Sign in</button>
       <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p> -->
     </form>
+
   </div>
-  <app-register-page></app-register-page>
+
+  <!-- <app-register-page></app-register-page> -->
   <app-application-page></app-application-page>
   <br>
   <br>

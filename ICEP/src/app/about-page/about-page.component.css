@@ -20,3 +20,11 @@
     background-color:rgb(95, 94, 94);
     color: white;
 }
+
+.card:hover
+{
+    /* background-color: rgb(144, 144, 144);
+    color: black; */
+    transition: transform 0.9s;
+    transform: scale(1.2);
+}

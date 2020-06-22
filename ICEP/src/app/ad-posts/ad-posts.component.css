@@ -19,20 +19,35 @@ div.scroll {
     padding-right:10px; 
     /* background-color: green;  */
     width: 99%; 
-    height: 150px; 
+    height: 300px; 
     overflow-x: hidden; 
     overflow-x: auto; 
     text-align:justify;
-    
 } 
 
 h3
 {
     color: white;
 }
-.col-sm-4
+
+
+.card
 {
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 13px;
+    /* background-color: rgb(144, 144, 144); */
+    /* color: white; */   
 }
+.card:hover
+{
+    /* background-color: rgb(144, 144, 144);
+    color: black; */
+    transition: transform 0.4s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/* .card-text
+{
+    background-color: gainsboro;
+    color: white;
+} */
