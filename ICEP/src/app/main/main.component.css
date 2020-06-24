@@ -1,5 +1,8 @@
-.slider
+
+
+.carousel
 {
-    /* z-index: -1; */
+    padding-top: 90px;
     position: relative;
+    z-index: 0; 
 }
