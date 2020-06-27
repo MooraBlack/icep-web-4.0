@@ -14,10 +14,8 @@ p{
 }
 
 div.scroll { 
-    /* margin:4px, 4px;  */
     margin:5px ;
     padding-right:10px; 
-    /* background-color: green;  */
     width: 99%; 
     height: 300px; 
     overflow-x: hidden; 
