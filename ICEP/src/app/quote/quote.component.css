@@ -3,15 +3,16 @@
     /* display: flex; */
     margin:20px 0 20px 0;
     padding:20px 0 20px 0;
-    /* height: 20vh;  */
     background-color: rgb(144, 144, 144);
     color: white;
+    text-align: center;
+    display: list-item;
 }
 
 
 h4 {
-    -moz-animation-duration: 3s;
-    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 5s;
+    -webkit-animation-duration: 5s;
     -moz-animation-name: slidein-left;
     -webkit-animation-name: slidein-left;
   }
@@ -27,7 +28,7 @@ h4 {
     }
   }
   
-  @-webkit-keyframes slidein-left {
+  @-webkit-keyframes  slidein-left {
     from {
       margin-left: 28%;
       width: 300%
@@ -39,10 +40,12 @@ h4 {
   }
   
   h6 {
-    -moz-animation-duration: 3s;
-    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 5s;
+    -webkit-animation-duration: 5s;
     -moz-animation-name: slidein-right;
     -webkit-animation-name: slidein-right;
+    font-family: "Brush Script MT", cursive; font-size: 26px;
+
   }
   
   @-moz-keyframes slidein-right {

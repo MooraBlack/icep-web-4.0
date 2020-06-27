@@ -1,9 +1,12 @@
 .page-section
 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
+
+    
+    padding-top: 90px;
     padding-bottom: 20px;
     background-color: rgb(144, 144, 144);
     color: white;

@@ -9,8 +9,20 @@ a:hover
 
 .navbar
 {
-  margin: 0px 0 5px 0;
+  flex-direction: row;
+  margin: 0px 0px 10px 0px;
   background-color: rgb(163, 160, 160);
+  top: 0;
+  overflow: hidden; 
+  z-index: 1;
+  background-position-y: top;
+  position: fixed;
+ justify-items: flex-end;
+ width: 96.6vw;
+}
+.collapse
+{
+  justify-content: flex-end;
 }
 
 .nav-link.log
@@ -22,3 +34,4 @@ a:hover
 {
     color: white;
 }
+
