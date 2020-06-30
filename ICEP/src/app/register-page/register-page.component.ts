@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, FormControl } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'; // added
 
 @Component({
   selector: 'app-register-page',
@@ -11,9 +12,9 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 export class RegisterPageComponent implements OnInit {
 
-  
+
   constructor() {
-    
+
    }
 
   ngOnInit(): void {

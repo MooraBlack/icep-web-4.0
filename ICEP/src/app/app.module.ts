@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FormsModule} from '@angular/forms'
+import { FormsModule} from '@angular/forms';
 
 
-import { AppRoutingModule } from './app-routing.module'; 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
@@ -26,6 +26,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { EmailFeedbackComponent } from './email-feedback/email-feedback.componen
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
