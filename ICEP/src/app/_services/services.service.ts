@@ -20,8 +20,7 @@ export class ServicesService {
   // -------------------------------------------------------------------------
   // REGISTRATION
   // -------------------------------------------------------------------------
- private registration(){
-    return this.http.post(this.reg_URL, first_name, last_name, phone_no, email, password);
-  }
+    //LOGIN
+    
 
 }
