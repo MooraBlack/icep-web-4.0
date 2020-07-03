@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule} from '@angular/forms';
 
+
 //added
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -35,6 +36,7 @@ import { EmailFeedbackComponent } from './email-feedback/email-feedback.componen
 import { AlertComponent } from './_components/alert/alert.component';
 import { LoginComponent } from './login/login/login.component';
 import { RegisterComponent } from './register/register/register.component';
+import { from } from 'rxjs';
 
 
 @NgModule({
@@ -68,10 +70,12 @@ import { RegisterComponent } from './register/register/register.component';
     FormsModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-              { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },],
+              { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
