@@ -19,13 +19,9 @@ import { ApplicationPageComponent } from './application-page/application-page.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
-import { LoginComponent } from './login/login/login.component';
-import { RegisterComponent } from './register/register/register.component';
-import { AuthGuard } from './_helpers/auth.guard'; //added
-
 
 const routes: Routes = [
-  {path:'',redirectTo:'home-page', pathMatch:'full',canActivate: [AuthGuard]},
+  {path:'',redirectTo:'home-page', pathMatch: 'full'},
   {path:'admin-login-page', component: AdminLoginPageComponent},
   {path:'home-page', component: HomePageComponent},
   {path:'main', component: MainComponent},
@@ -46,15 +42,13 @@ const routes: Routes = [
   {path:'gallery', component: GalleryComponent},
   {path:'email-feedbac', component: EmailFeedbackComponent},
  // { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'login/login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
 
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{
-    scrollPositionRestoration: 'enabled' //Scroll to top on every Route click
+    scrollPositionRestoration: 'enabled' // Scroll to top on every Route click
 
   })],
   exports: [RouterModule]

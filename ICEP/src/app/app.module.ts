@@ -4,12 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule} from '@angular/forms';
 
 
-//added
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+// added
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { JwtInterceptor } from './_helpers/jwt.interceptor';
-import {  ErrorInterceptor } from './_helpers/error.interceptor';
-import { App } from './../../../../IcepWeb-Backend';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,10 +30,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
-import { AlertComponent } from './_components/alert/alert.component';
-import { LoginComponent } from './login/login/login.component';
-import { RegisterComponent } from './register/register/register.component';
 import { from } from 'rxjs';
+import { ApiService } from './api.service';
 
 
 
@@ -62,9 +57,6 @@ import { from } from 'rxjs';
     GalleryComponent,
     AdminLoginPageComponent,
     EmailFeedbackComponent,
-    AlertComponent,
-    LoginComponent,
-    RegisterComponent,
      ],
   imports: [
     BrowserModule,
@@ -75,9 +67,7 @@ import { from } from 'rxjs';
     HttpClientModule,
     RouterModule
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-              { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-            App],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
