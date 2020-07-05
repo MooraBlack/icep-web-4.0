@@ -1,7 +1,8 @@
 <!-- Modal -->
 <!-- lunch button uses id as referrence -->
-<div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
+
+<!--
+ <div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-ls" role="document">
     <div class="modal-content">
       <div class="modal-header bg-secondary text-light justify-content-center">
@@ -9,6 +10,9 @@
           <svg class="bi bi-card-checklist" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
             <path fill-rule="evenodd" d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            <circle cx="3.5" cy="5.5" r=".5"/>
+            <circle cx="3.5" cy="8" r=".5"/>
+            <circle cx="3.5" cy="10.5" r=".5"/>
           </svg>
           Registration  ICEP</h5>
       </div>
@@ -18,8 +22,7 @@
 
           <div class="form-group">
             <label>Email address</label>
-            <input type="email" formControlName="username" class="form-control" aria-describedby="email" placeholder="Enter your Email"
-              required>
+            <input type="email" formControlName="username" class="form-control" aria-describedby="email" placeholder="Enter your Email" required>
           </div>
 
           <div class="form-group">
@@ -28,22 +31,98 @@
               required>
           </div>
 
-          <!-- <div class="form-group">
+          <div class="form-group">
             <label>Re-type Password</label>
             <input type="password" formControlName="password" class="form-control" aria-describedby="confrim password" placeholder="Confrim your password"
               required/>
-          </div> -->
+          </div>
 
         </div>
 
         <div class="modal-footer justify-content-center">
           <button type="submit" class="btn btn-primary">Register</button>
+          <!--button type="button" class="btn btn-secondary" (click)='register()'>register</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-        
+
       </form>
     </div>
   </div>
 </div>
-
+-->
 <!-- Modal end -->
+<div class="dash-page">
+  <div class="text-center">
+    <a routerLink="/"><img src="/assets/pictures/ICEP-Logo.png" alt="" width="150" height="150"></a>
+  </div>
+
+  <nav>
+    <hr class="divider my-4">
+    <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
+    <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
+    <a class="nav-link" routerLink="/login-page" routerLinkActive="router-link-active">Login</a>
+    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Application">Apply</a>
+    <a class="nav-link" routerLink="/register-page" routerLinkActive="router-link-active">Register</a>
+    <!--a class="nav-link btn" type="button" data-toggle="modal" data-target="#Registration">Register</a-->
+    <hr class="divider my-4">
+  </nav>
+
+  <hr class="divider mx-8">
+  <h6>Registration</h6>
+
+  <div>
+
+    <form class="form-signin">
+
+      <div class="form-label-group">
+        <label for="inputFirst_name">First Name</label>
+        <input type="text" id="inputFirst_name" name= "first_name" class="form-control" placeholder="first_name" required autofocus
+        [(ngModel)] = 'user.first_name'>
+
+      </div>
+
+      <div class="form-label-group">
+        <label for="inputLast_name">Last Name</label>
+        <input type="text" id="inputLast_name" name= "last_name" class="form-control" placeholder="last_name" required autofocus
+        [(ngModel)] = 'user.last_name'>
+
+      </div>
+
+      <div class="form-label-group">
+        <label for="inputPhone">Cellphone</label>
+        <input type="number" id="inputPhone" name= "phone_no" class="form-control" placeholder="phone_no" required autofocus
+        [(ngModel)] = 'user.phone_no'>
+
+      </div>
+
+      <div class="form-label-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name= "email" class="form-control" placeholder="Email address" required autofocus
+        [(ngModel)] = 'user.email'>
+
+      </div>
+
+      <div class="form-label-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required
+        [(ngModel)] = 'user.password'>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+
+      <button class="btn btn-lg btn-dark btn-block" (click)="register()">Sign in</button>
+      <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p> -->
+    </form>
+
+  </div>
+
+  <!-- <app-register-page></app-register-page> -->
+  <app-application-page></app-application-page>
+  <br>
+  <br>
+  <app-footer></app-footer>
+</div>

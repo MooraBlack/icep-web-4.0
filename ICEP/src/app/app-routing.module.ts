@@ -20,9 +20,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 
-
 const routes: Routes = [
-  {path:'',redirectTo:'home-page', pathMatch:'full'},
+  {path:'',redirectTo:'home-page', pathMatch: 'full'},
   {path:'admin-login-page', component: AdminLoginPageComponent},
   {path:'home-page', component: HomePageComponent},
   {path:'main', component: MainComponent},
@@ -41,14 +40,15 @@ const routes: Routes = [
   {path:'application-page', component: ApplicationPageComponent},
   {path:'dashboard', component: DashboardComponent},
   {path:'gallery', component: GalleryComponent},
-  {path:'email-feedbac', component: EmailFeedbackComponent}
+  {path:'email-feedbac', component: EmailFeedbackComponent},
+ // { path: '', component: HomeComponent, canActivate: [AuthGuard] },
 
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{
-    scrollPositionRestoration: 'enabled' //Scroll to top on every Route click
+    scrollPositionRestoration: 'enabled' // Scroll to top on every Route click
 
   })],
   exports: [RouterModule]
