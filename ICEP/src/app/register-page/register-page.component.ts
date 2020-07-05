@@ -12,9 +12,13 @@ import { ApiService } from '../api.service';
 
 export class RegisterPageComponent implements OnInit {
  user = {
-   username: '',
-   password: '',
-   published: false
+   first_name: '',
+   last_name: '',
+   phone_no: '',
+   email: '',
+   password: ''
+
+   // published: false
  };
  submitted: false;
 
@@ -28,7 +32,10 @@ export class RegisterPageComponent implements OnInit {
 
   register(){
     const data = {
-      username: this.user.username,
+      first_name: this.user.first_name,
+      last_name: this.user.last_name,
+      phone_no: this.user.phone_no,
+      email: this.user.email,
       password: this.user.password,
     };
 
@@ -38,10 +45,13 @@ export class RegisterPageComponent implements OnInit {
   newReg(){
     this.submitted = false;
     this.user = {
-      username: '',
-   password: '',
-   published: false
-    }
+      first_name: '',
+      last_name: '',
+      phone_no: '',
+      email: '',
+      password: ''
+  // published: false
+   };
   }
 
 }
