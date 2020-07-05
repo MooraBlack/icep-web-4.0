@@ -39,7 +39,7 @@ export class RegisterPageComponent implements OnInit {
       password: this.user.password,
     };
 
-    this.apiService.create(data).subscribe(response => {console.log(response); } , error => console.log(error));
+    this.apiService.createReg(data).subscribe(response => {console.log(response); } , error => console.log(error));
 
   }
   newReg(){
