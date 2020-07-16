@@ -28,12 +28,15 @@ const routes: Routes = [
     path: 'home',
     canActivate: [AuthGuard],
     // tslint:disable-next-line: max-line-length
-    loadChildren: () => import('src/app/home-page/home-page.component').then(m => m.HomePageComponent) // lazy loading, check if forward/backward slash 21 min
+    loadChildren: 'ICEP/src/app/modules/navigation/navigation.module#NavigationModule' // lazy loading, check if forward/backward slash 21 min
   },
-  // lazy loading, check if forward or backward slash
-  { path: 'auth', loadChildren: () => import('src/app/modules/auth/auth.module').then(m => m.AuthModule)
+  {path: '',
+   loadChildren: 'ICEP/src/app/modules/auth/auth.module#AuthModule' // lazy loading, check if forward or backward slash
   },
-
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  },
   {path: '', redirectTo: 'home-page', pathMatch: 'full'},
   {path: 'admin-login-page', component: AdminLoginPageComponent},
   {path: 'home-page', component: HomePageComponent},
@@ -53,8 +56,7 @@ const routes: Routes = [
   {path: 'application-page', component: ApplicationPageComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'gallery', component: GalleryComponent},
-  {path: 'email-feedbac', component: EmailFeedbackComponent},
-  {path: '**', component: PageNotFoundComponent},
+  {path: 'email-feedbac', component: EmailFeedbackComponent}
 
 
 ];
