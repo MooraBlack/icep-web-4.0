@@ -16,7 +16,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getAllReg(){
-   this.http.get(regUrl);
+   return this.http.get(studProfUrl);
   }
   getReg(id){
     this.http.get('${regUrl}/${id}');
