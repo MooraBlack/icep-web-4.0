@@ -19,51 +19,36 @@ import { ApplicationPageComponent } from './application-page/application-page.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
-  {
-    path: 'home',
-    canActivate: [AuthGuard],
-    // tslint:disable-next-line: max-line-length
-    loadChildren: 'ICEP/src/app/modules/navigation/navigation.module#NavigationModule' // lazy loading, check if forward/backward slash 21 min
-  },
-  {path: '',
-   loadChildren: 'ICEP/src/app/modules/auth/auth.module#AuthModule' // lazy loading, check if forward or backward slash
-  },
-  {
-    path: '**',
-    component: PageNotFoundComponent
-  },
-  {path: '', redirectTo: 'home-page', pathMatch: 'full'},
-  {path: 'admin-login-page', component: AdminLoginPageComponent},
-  {path: 'home-page', component: HomePageComponent},
-  {path: 'main', component: MainComponent},
-  {path: 'quote', component: QuoteComponent},
-  {path: 'team', component: TeamComponent},
-  {path: 'header', component: HeaderComponent},
-  {path: 'ad-service', component: AdServicesComponent},
-  {path: 'footer', component: FooterComponent},
-  {path: 'ad-posts', component: AdPostsComponent},
-  {path: 'about-page', component: AboutPageComponent},
-  {path: 'services-page', component: ServicesPageComponent},
-  {path: 'contacts-page', component: ContactsPageComponent},
-  {path: 'projects-page', component: ProjectsPageComponent},
-  {path: 'login-page', component: LoginPageComponent},
-  {path: 'register-page', component: RegisterPageComponent},
-  {path: 'application-page', component: ApplicationPageComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: 'email-feedbac', component: EmailFeedbackComponent}
+  {path:'',redirectTo:'home-page', pathMatch:'full'},
+  {path:'admin-login-page', component: AdminLoginPageComponent},
+  {path:'home-page', component: HomePageComponent},
+  {path:'main', component: MainComponent},
+  {path:'quote', component: QuoteComponent},
+  {path:'team', component: TeamComponent},
+  {path:'header', component: HeaderComponent},
+  {path:'ad-service', component: AdServicesComponent},
+  {path:'footer', component: FooterComponent},
+  {path:'ad-posts', component: AdPostsComponent},
+  {path:'about-page', component: AboutPageComponent},
+  {path:'services-page', component: ServicesPageComponent},
+  {path:'contacts-page', component: ContactsPageComponent},
+  {path:'projects-page', component: ProjectsPageComponent},
+  {path:'login-page', component: LoginPageComponent},
+  {path:'register-page', component: RegisterPageComponent},
+  {path:'application-page', component: ApplicationPageComponent},
+  {path:'dashboard', component: DashboardComponent},
+  {path:'gallery', component: GalleryComponent},
+  {path:'email-feedbac', component: EmailFeedbackComponent}
 
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled' // Scroll to top on every Route click
+  imports: [RouterModule.forRoot(routes,{
+    scrollPositionRestoration: 'enabled' //Scroll to top on every Route click
 
   })],
   exports: [RouterModule]
