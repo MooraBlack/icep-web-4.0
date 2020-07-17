@@ -21,33 +21,33 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'home-page', pathMatch: 'full'},
-  {path:'admin-login-page', component: AdminLoginPageComponent},
-  {path:'home-page', component: HomePageComponent},
-  {path:'main', component: MainComponent},
-  {path:'quote', component: QuoteComponent},
-  {path:'team', component: TeamComponent},
-  {path:'header', component: HeaderComponent},
-  {path:'ad-service', component: AdServicesComponent},
-  {path:'footer', component: FooterComponent},
-  {path:'ad-posts', component: AdPostsComponent},
-  {path:'about-page', component: AboutPageComponent},
-  {path:'services-page', component: ServicesPageComponent},
-  {path:'contacts-page', component: ContactsPageComponent},
-  {path:'projects-page', component: ProjectsPageComponent},
-  {path:'login-page', component: LoginPageComponent},
-  {path:'register-page', component: RegisterPageComponent},
-  {path:'application-page', component: ApplicationPageComponent},
-  {path:'dashboard', component: DashboardComponent},
-  {path:'gallery', component: GalleryComponent},
-  {path:'email-feedbac', component: EmailFeedbackComponent},
- // { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+  {path:  '' , redirectTo: 'home-page', pathMatch: 'full'},
+  {path: 'admin-login-page', component: AdminLoginPageComponent},
+  {path: 'home-page', component: HomePageComponent},
+  {path: 'main', component: MainComponent},
+  {path: 'quote', component: QuoteComponent},
+  {path: 'team', component: TeamComponent},
+  {path: 'header', component: HeaderComponent},
+  {path: 'ad-service', component: AdServicesComponent},
+  {path: 'footer', component: FooterComponent} ,
+  {path: 'ad-posts', component: AdPostsComponent },
+  {path: 'about-page', component: AboutPageComponent},
+  {path: 'services-page', component: ServicesPageComponent},
+  {path: 'contacts-page', component: ContactsPageComponent},
+  {path: 'projects-page', component: ProjectsPageComponent},
+  {path: 'login-page', component: LoginPageComponent},
+  {path: 'register-page', component: RegisterPageComponent},
+  {path: 'application-page', component: ApplicationPageComponent},
+  {path: 'dashboard', component: DashboardComponent},
+
+  {path: 'gallery', component: GalleryComponent},
+  {path: 'email-feedbac', component: EmailFeedbackComponent},
 
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
+  imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled' // Scroll to top on every Route click
 
   })],
