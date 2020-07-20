@@ -23,7 +23,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { LoginPageComponent } from './login-page/login-page.component';
+import { LoginComponent } from './login/login/login.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ApplicationPageComponent } from './application-page/application-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -50,7 +50,7 @@ import { ApiService } from './api.service';
     ServicesPageComponent,
     ContactsPageComponent,
     ProjectsPageComponent,
-    LoginPageComponent,
+    LoginComponent,
     RegisterPageComponent,
     ApplicationPageComponent,
     DashboardComponent,
