@@ -4,10 +4,5 @@
     background-color: grey;
     padding: 0px 15px 15px 15px;
     font-family: cursive;
-    
+    font-size: medium;
 }
-
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
