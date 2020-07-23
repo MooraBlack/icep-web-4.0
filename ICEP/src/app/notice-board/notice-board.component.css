@@ -41,15 +41,15 @@
    
   .main {
     margin-left: 14%; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
+    /* font-size: 28px; Increased text to enable scrolling */
     padding: 0px 10px;
     background-color:grey;
     width: 86%;
     height: 95%;
      /*z-index: 1;  Stay on top */
     /* top: 0;  Stay at the top */
-    padding-top: 70px;
-    margin-top: 70x;
+    padding-top: 45px;
+    margin-top: 45x;
     /*top: 15; Stay at the top */
     bottom: 0;
     position: fixed;
@@ -67,3 +67,32 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  div.scroll { 
+    margin:5px ;
+    padding-right:10px; 
+    width: 99%; 
+    height: 400px; 
+    overflow-x: hidden; 
+    overflow-x: auto; 
+    text-align:justify;
+} 
+.row
+{
+    display: flex;
+}
+
+.card
+{
+    margin: 13px;
+    /* background-color: rgb(144, 144, 144); */
+    /* color: white; */  
+   
+}
+.notice
+{
+    padding: 20px 0 20px 0;
+    background-color: lightgrey;
+    font-family: cursive;
+    /* font-size: medium; */
+}

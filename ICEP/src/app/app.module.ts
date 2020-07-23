@@ -30,6 +30,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
+import { UserinforCardComponent } from './userinfor-card/userinfor-card.component';
+import { ReportComponent } from './report/report.component';
+import { ApplicantsComponent } from './applicants/applicants.component';
+import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { from } from 'rxjs';
 import { ApiService } from './api.service';
 
@@ -57,6 +61,10 @@ import { ApiService } from './api.service';
     GalleryComponent,
     AdminLoginPageComponent,
     EmailFeedbackComponent,
+    UserinforCardComponent,
+    ReportComponent,
+    ApplicantsComponent,
+    NoticeBoardComponent,
      ],
   imports: [
     BrowserModule,
