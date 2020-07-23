@@ -35,7 +35,7 @@ const routes: Routes = [
   {path: 'services-page', component: ServicesPageComponent},
   {path: 'contacts-page', component: ContactsPageComponent},
   {path: 'projects-page', component: ProjectsPageComponent},
-  {path: 'login-page', component: LoginComponent},
+  {path: 'login/login', component: LoginComponent},
   {path: 'register-page', component: RegisterPageComponent},
   {path: 'application-page', component: ApplicationPageComponent},
   {path: 'dashboard', component: DashboardComponent},
