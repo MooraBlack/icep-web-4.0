@@ -5,7 +5,7 @@ import { first } from 'rxjs/operators';
 import {AuthenticationService } from '../../_services/authentication.service';
 import { AlertService } from '../../_services/alert.service';
 
-@Component({ 
+@Component({
     templateUrl: 'login.component.html',
     styleUrls: ['./login.component.css']
 })
@@ -63,6 +63,9 @@ export class LoginComponent implements OnInit {
                     this.alertService.error(error);
                     this.loading = false;
                 });
+    }
+    home(){
+      this.router.navigateByUrl('/homd-page');
     }
 
 
