@@ -13,9 +13,9 @@
 
   .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 14%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    -index: 1;  /*z Stay on top */
+    z-index: 0;  /*z Stay on top */
     /* top: 0; Stay at the top */
     left: 0;
     /* background-color: #111;   */
@@ -34,22 +34,33 @@
   }
 
   .sidenav a:hover {
-    color: thistle;
+    color: grey;
+    transform: scale(1.1);
   }
 
 
   .main {
-    margin-left: 160px; /* Same width as the sidebar + left position in px */
+    margin-left: 14%; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-    background-color:blue;
-    width: 88%;
+    background-color:grey;
+    width: 86%;
     height: 95%;
      /*z-index: 1;  Stay on top */
     /* top: 0;  Stay at the top */
     padding-top: 70px;
     margin-top: 70x;
     /*top: 15; Stay at the top */
+    bottom: 0;
+    position: fixed;
+    z-index: -1;  /*z Stay on top */
+  }
+
+  .footer
+  {
+    position: fixed;
+    bottom: 0;
+    display: flex;
   }
 
   @media screen and (max-height: 450px) {

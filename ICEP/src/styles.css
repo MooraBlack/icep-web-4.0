@@ -4,7 +4,9 @@
     background-color: grey;
     padding: 0px 15px 15px 15px;
     font-family: cursive;
-    
+    /* font-size: medium; */
 }
-
-
+h3{
+    font-family: cursive;
+    font-size: medium;
+}

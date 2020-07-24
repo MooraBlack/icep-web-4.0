@@ -17,7 +17,8 @@
     overflow: auto;
     background-color: lightslategrey;
     display: flex;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cursive;
+    font-size: medium;
   }
   
   .col-items2 ul li a{
@@ -180,7 +181,8 @@
     overflow: auto;
     background-color: lightslategrey;
     display: flex;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cursive;
+    font-size: medium;
   }
   
   .col-items2 ul li a{

@@ -2,7 +2,8 @@
 {
     padding: 20px 0 20px 0;
     background-color: rgb(144, 144, 144);
-    
+    font-family: cursive;
+    font-size: medium;
 }
 p{
     color: black;
