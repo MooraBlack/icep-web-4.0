@@ -1,71 +1,66 @@
 <div class="dash-page ">
-    <!-- header -->
-    <div class="header justify-content-center">
-        <h3><a routerLink="/dashboard"><img src="/assets/pictures/ICEP-Logo.png" alt="Logo" style="width:80px;"></a>Welcome To ICEP Dashboard</h3>
+  <!-- header -->
+  <div class="header justify-content-center">
+      <h3><a routerLink="/dashboard"><img src="/assets/pictures/ICEP-Logo.png" alt="Logo" style="width:80px;"></a>Welcome To ICEP Dashboard</h3>
+  </div>
+
+
+  <!-- Sidebar -->
+  <div class="sidenav bg-dark">
+    <a class="nav-link" routerLink="/dashboard"  routerLinkActive="router-link-active" >Dashboard</a>
+    <a class="nav-link" routerLink="/notice-board"  routerLinkActive="router-link-active" >Notice Board</a>
+    <a class="nav-link" routerLink="/report"  routerLinkActive="router-link-active" >Report</a>
+    <!-- <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>  -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <app-footer></app-footer>
     </div>
+</div>
 
+  <!-- main -->
+  <div class="main">
+    <div class="col">
 
-    <!-- Sidebar -->
-    <div class="sidenav bg-dark">
-            <a class="nav-link" routerLink="/dashboard"  routerLinkActive="router-link-active" >Dashboard</a>
-<<<<<<< HEAD
-            <a class="nav-link" routerLink="/login-page"  routerLinkActive="router-link-active" >Log</a>
-            <a class="nav-link" routerLink="/register-page"  routerLinkActive="router-link-active" >Report</a>
-            <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>
-=======
-            <a class="nav-link" routerLink="/notice-board"  routerLinkActive="router-link-active" >Notice Board</a>
-            <a class="nav-link" routerLink="/report"  routerLinkActive="router-link-active" >Report</a>
-            <!-- <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>  -->
->>>>>>> 81b3dbffa7ea17d2ebc974cd386b042481b69dc1
+        <div class="usercard"  >
 
-            <!-- Footer -->
-            <div class="footer">
-                <app-footer></app-footer>
-            </div>
-    </div>
-
-    <!-- main -->
-<<<<<<< HEAD
-    <div class="applicant-card">
-        <ol>
-            <li *ngFor="let r of regStud.results">
-
-                <div class="card">
-                    <h5 class="card-header">Applicant</h5>
-                    <div class="card-body">
-                        <h5 class="card-title"> Name: {{r.first_name}} <br> Surname: {{r.last_name}} <br>
-                        </h5>
-                        <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
+            <div class="card">
+                <h3 class="card-header">ICEP MEMBER</h3>
+                <div class="card-body">
+                  <h4 class="card-title">Username: Admin@123</h4>
+                  <a href="/home-page" class="btn btn-dark" >Logout</a>
                 </div>
-            </li>
-        </ol>
-    </div>
+              </div>
 
-=======
-    <div class="main">
-        <div class="col">
-
-            <div class="usercard"  >
-
-                <div class="card">
-                    <h3 class="card-header">ICEP MEMBER</h3>
-                    <div class="card-body">
-                      <h4 class="card-title">Username: </h4>
-                      <a href="#" class="btn btn-dark">Logout</a>
-                    </div>
-                  </div>
-            
-            </div>
-            <!-- <app-userinfor-card></app-userinfor-card> -->
         </div>
-                 
-
+        <!-- <app-userinfor-card></app-userinfor-card> -->
     </div>
-   
-   
->>>>>>> 81b3dbffa7ea17d2ebc974cd386b042481b69dc1
+
 
 </div>
+
+
+
+<!--/div>
+<ng-sidebar-container>
+
+    < A sidebar>
+    <ng-sidebar [(opened)]="_opened">
+      <p>Sidebar contents</p>
+      <li>
+        <a routerLink="/dashboard/adminprof">Profile</a>
+      </li>
+      <li>
+        <a routerLink="/dashboard/regstud">Registered Students</a>
+      </li>
+
+
+    </ng-sidebar>
+
+    <Page content >
+    <div ng-sidebar-content>
+      <button (click)="_toggleSidebar()">Toggle sidebar</button>
+    </div>
+
+  </ng-sidebar-container-->
 

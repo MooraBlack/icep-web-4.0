@@ -65,7 +65,7 @@ export class LoginComponent implements OnInit {
                 });
     }
     home(){
-      this.router.navigateByUrl('/homd-page');
+      this.router.navigateByUrl('home-page');
     }
 
 

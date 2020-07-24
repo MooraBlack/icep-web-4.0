@@ -1,0 +1,72 @@
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search by title"
+        [(ngModel)]="lname"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="searchStud()"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4>Registerd students
+    </h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let stud of students.results; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveTStudent(stud, i)"
+      >
+        {{ stud.first_name }} - {{stud.last_name}}
+      </li>
+    </ul>
+
+    <button class="m-3 btn btn-sm btn-danger" >
+      Remove All
+    </button>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentStudent">
+      <h4>Student profile</h4>
+      <div>
+        <label><strong>Name:</strong></label> {{ currentStudent.first_name}}
+      </div>
+      <div>
+        <label><strong>Surname:</strong></label>
+        {{ currentStudent.last_name }}
+      </div>
+      <div>
+        <label><strong>Contact number:</strong></label>
+        {{ currentStudent.phone_no }}
+      </div>
+      <div>
+        <label><strong>Email Address:</strong></label>
+        {{ currentStudent.email }}
+      </div>
+      <div>
+        <label><strong>Status:</strong></label>
+        {{ currentStudent.published ? "Published" : "Pending" }}
+      </div>
+
+
+      <a class="badge badge-warning" href="/tutorials/{{ currentStudent.id }}">
+        Edit
+      </a>
+    </div>
+    <div *ngIf="!currentStudent">
+      <br />
+      <p>Please click on a Tutorial...</p>
+    </div>
+  </div>
+</div>
