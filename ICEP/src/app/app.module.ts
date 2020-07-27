@@ -23,13 +23,17 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { LoginPageComponent } from './login-page/login-page.component';
+import { LoginComponent } from './login/login/login.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ApplicationPageComponent } from './application-page/application-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
+import { UserinforCardComponent } from './userinfor-card/userinfor-card.component';
+import { ReportComponent } from './report/report.component';
+import { ApplicantsComponent } from './applicants/applicants.component';
+import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { from } from 'rxjs';
 import { ApiService } from './api.service';
 
@@ -50,13 +54,17 @@ import { ApiService } from './api.service';
     ServicesPageComponent,
     ContactsPageComponent,
     ProjectsPageComponent,
-    LoginPageComponent,
+    LoginComponent,
     RegisterPageComponent,
     ApplicationPageComponent,
     DashboardComponent,
     GalleryComponent,
     AdminLoginPageComponent,
     EmailFeedbackComponent,
+    UserinforCardComponent,
+    ReportComponent,
+    ApplicantsComponent,
+    NoticeBoardComponent,
      ],
   imports: [
     BrowserModule,

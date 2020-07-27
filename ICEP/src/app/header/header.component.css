@@ -12,7 +12,7 @@ a:hover
 {
   flex-direction: row;
   margin: 0px 0px 10px 0px;
-  background-color: rgb(163, 160, 160);
+  background-color: rgb(144, 144, 144);
   top: 0;
   overflow: hidden; 
   z-index: 1;
@@ -20,6 +20,8 @@ a:hover
   position: fixed;
  justify-items: flex-end;
  width: 96.6vw;
+ font-family: cursive;
+    font-size: medium;
 }
 .collapse
 {
@@ -261,4 +263,8 @@ a:hover
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
   }
+}
+
+#user-icon{
+  width: 100px;
 }

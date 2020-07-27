@@ -15,26 +15,45 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(){
+  getAllReg(){
    this.http.get(regUrl);
   }
-  get(id){
+  getReg(id){
     this.http.get('${regUrl}/${id}');
   }
 
-  public create(data){
+  public createReg(data){// for registration
     return this.http.post(regUrl, data);
   }
-  public update(id, data){
+  public updateReg(id, data){
     return this.http.put('${regUrl}/${id}', data);
   }
-  public delete(id){
+  public deleteReg(id){
    return  this.http.delete('${regUrl}/${id}');
   }
-  deleteAll(){
+  deleteAllReg(){
     this.http.delete(regUrl);
   }
 
+  getAllApplication(){
+    this.http.get(applicationUrl);
+   }
+   getApplication(id){
+     this.http.get('${applicationUrl}/${id}');
+   }
+
+   public createApplication(data){// for Applicationistration
+     return this.http.post(applicationUrl, data);
+   }
+   public updateApplication(id, data){
+     return this.http.put('${applicationUrl}/${id}', data);
+   }
+   public deleteApplication(id){
+    return  this.http.delete('${applicationUrl}/${id}');
+   }
+   deleteAllApplication(){
+     this.http.delete(applicationUrl);
+   }
   // this one is for search, by name
   searchByName(name){
    this.http.get('${regUrl}?name=${name}');

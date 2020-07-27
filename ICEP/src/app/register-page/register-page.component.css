@@ -1,19 +1,23 @@
 .dash-page
 {
-  background-color: silver;
-  height: 100vh;
-  width: 100;
+  background-color: grey;
+  /* height: 100vh; */
+  width: 100%;
   font-family: cursive;
+  bottom: 0;
+ 
 }
 h1
 {
     text-align: center;
+    font-family: cursive;
 }
 
-h6
+h3
 {
     text-align: center;
-    color: black;
+    color: white;
+    font-family: cursive;
 }
 .mx-auto
 {
@@ -26,11 +30,11 @@ nav
 }
 nav a
 {
-  color: black;
+  color: white;
 }
 label
 {
-  color: black;
+  color: white;
 }
 
 .bd-placeholder-img {

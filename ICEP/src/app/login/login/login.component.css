@@ -1,20 +1,25 @@
 .dash-page
 {
-  background-color: silver;
-  height: 100vh;
-  width: 100;
-  font-family: cursive;
+    background-color: rgb(161, 159, 159);
+    height: 100vh;
+    width: 100;
+    font-family: cursive;
+    font-size: medium;
+}
+nav a
+{
+    color: white;
 }
 h1
 {
     text-align: center;
 }
-
 h6
 {
     text-align: center;
-    color: black;
+    color: white;
 }
+
 .mx-auto
 {
     image-orientation: unset;
@@ -23,14 +28,6 @@ nav
 {
   display: flex;
   justify-content: center;
-}
-nav a
-{
-  color: black;
-}
-label
-{
-  color: black;
 }
 
 .bd-placeholder-img {
@@ -57,4 +54,8 @@ form
   max-width: 420px;
   padding: 15px;
   margin: auto;
+}
+label
+{
+    color: white;
 }
