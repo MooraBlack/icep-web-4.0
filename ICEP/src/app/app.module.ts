@@ -41,6 +41,7 @@ import { AdminprofComponent } from './dashboard/adminprof/adminprof.component';
 import { RegstudComponent } from './dashboard/regstud/regstud.component';
 
 
+export const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -78,7 +79,9 @@ import { RegstudComponent } from './dashboard/regstud/regstud.component';
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule,
+    RouterModule.forRoot(routes,{
+      anchorScrolling: 'enabled'
+    }),
     SidebarModule
   ],
   providers: [ApiService],
