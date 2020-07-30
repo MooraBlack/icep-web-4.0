@@ -38,6 +38,7 @@ import { from } from 'rxjs';
 import { ApiService } from './api.service';
 
 
+export const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -73,7 +74,9 @@ import { ApiService } from './api.service';
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule.forRoot(routes,{
+      anchorScrolling: 'enabled'
+    })
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
