@@ -4,8 +4,8 @@
     width: 100%; /* Set the width of the sidebar */
     position: fixed;  /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */  
-    background-color: #111; 
+    top: 0; /* Stay at the top */
+    background-color: #111;
     color: white;
     text-align: center;
 }
@@ -20,25 +20,25 @@
     left: 0;
     /* background-color: #111;   */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 70px; 
+    padding-top: 70px;
   }
-  
+
   .sidenav a {
     padding: 6px 8px 6px 20px;
     margin: 1px;
     text-decoration: none;
     font-size: 15px;
     color: white;
-    display: block; 
-    background-color: #111; 
+    display: block;
+    background-color: #111;
   }
-  
+
   .sidenav a:hover {
     color: grey;
     transform: scale(1.1);
   }
 
-   
+
   .main {
     margin-left: 14%; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
@@ -62,8 +62,14 @@
     bottom: 0;
     display: flex;
   }
-  
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  .applicant-card
+  {
+    padding: 5px;
+    margin: 5px;
   }
