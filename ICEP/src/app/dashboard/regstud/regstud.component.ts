@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
-  selector: 'app-applicants',
-  templateUrl: './applicants.component.html',
-  styleUrls: ['./applicants.component.css']
+  selector: 'app-regstud',
+  templateUrl: './regstud.component.html',
+  styleUrls: ['./regstud.component.css']
 })
-export class ApplicantsComponent implements OnInit {
+export class RegstudComponent implements OnInit {
 
   students: any;
   currentStudent = null;
@@ -59,5 +59,6 @@ export class ApplicantsComponent implements OnInit {
           console.log(error);
         });
   }
+
 
 }

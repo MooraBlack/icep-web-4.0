@@ -6,20 +6,23 @@ const baseUrl = 'localhost:5000/routes';
 const regUrl = 'http://localhost:5000/register';
 const adminProfileUrl = 'http://localhost:5000/admin_profile'; // succesful
 const reportUrl = 'http://localhost:5000/report';
-const applicationUrl = 'http://localhst:5000/application';
+const applicationUrl = 'http://localhost:5000/application';
 const studProfUrl = 'http://localhost:5000/student_profile'; // successful
+const upStudUrl = 'http://localhost:5000/update_profile';
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-
-  getAllReg(){
-   this.http.get(regUrl);
+  getAdminProf(){
+    return this.http.get(adminProfileUrl);
   }
-  getReg(id){
-    this.http.get('${regUrl}/${id}');
+  getAllReg(){
+   return this.http.get(studProfUrl);
+  }
+  public getReg(id){
+    return this.http.get('${regUrl}/${id}');
   }
 
   public createReg(data){// for registration
@@ -32,12 +35,13 @@ export class ApiService {
    return  this.http.delete('${regUrl}/${id}');
   }
   deleteAllReg(){
-    this.http.delete(regUrl);
+    this.http.delete(studProfUrl);
   }
 
   getAllApplication(){
     this.http.get(applicationUrl);
    }
+
    getApplication(id){
      this.http.get('${applicationUrl}/${id}');
    }
@@ -45,17 +49,29 @@ export class ApiService {
    public createApplication(data){// for Applicationistration
      return this.http.post(applicationUrl, data);
    }
+
    public updateApplication(id, data){
      return this.http.put('${applicationUrl}/${id}', data);
    }
+
    public deleteApplication(id){
     return  this.http.delete('${applicationUrl}/${id}');
    }
+
    deleteAllApplication(){
-     this.http.delete(applicationUrl);
+    return this.http.delete(applicationUrl);
    }
+
+   //
+   update(id, data) {
+    return this.http.put(`${upStudUrl}/${id}`, data);
+  }
+
+  delete(id) {
+    return this.http.delete(`${upStudUrl}/${id}`);
+  }
   // this one is for search, by name
-  searchByName(name){
-   this.http.get('${regUrl}?name=${name}');
+  searchByName(last_name){
+   return this.http.get('${studProfUrl}?last_name=${last_name}');
   }
 }

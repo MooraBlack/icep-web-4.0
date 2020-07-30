@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-application-page',
@@ -18,7 +19,7 @@ export class ApplicationPageComponent implements OnInit {
     proglanguages: ''
     // published: false
   };
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService , private route: Router) { }
 
   ngOnInit(): void {
   }
@@ -35,6 +36,10 @@ export class ApplicationPageComponent implements OnInit {
     proglanguages: this.user.proglanguages
     }
     this.api.createApplication(data).subscribe(response => {console.log(response); } , error => console.log(error));
+  }
+
+  gohome(){
+    this.route.navigateByUrl('home-page');
   }
 
 }

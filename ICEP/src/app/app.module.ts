@@ -7,6 +7,7 @@ import { FormsModule} from '@angular/forms';
 // added
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidebarModule } from 'ng-sidebar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +37,8 @@ import { ApplicantsComponent } from './applicants/applicants.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { from } from 'rxjs';
 import { ApiService } from './api.service';
+import { AdminprofComponent } from './dashboard/adminprof/adminprof.component';
+import { RegstudComponent } from './dashboard/regstud/regstud.component';
 
 
 export const routes: Routes = [];
@@ -66,6 +69,8 @@ export const routes: Routes = [];
     ReportComponent,
     ApplicantsComponent,
     NoticeBoardComponent,
+    AdminprofComponent,
+    RegstudComponent,
      ],
   imports: [
     BrowserModule,
@@ -76,7 +81,8 @@ export const routes: Routes = [];
     HttpClientModule,
     RouterModule.forRoot(routes,{
       anchorScrolling: 'enabled'
-    })
+    }),
+    SidebarModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
