@@ -34,7 +34,8 @@ h3
 {
     margin: 13px;
     /* background-color: rgb(144, 144, 144); */
-    /* color: white; */   
+    /* color: white; */  
+    height: fit-content; 
 }
 .card:hover
 {
