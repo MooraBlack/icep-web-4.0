@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 .page
 {
-    background-color: grey;
+    background-color: whitesmoke;
     padding: 0px 15px 15px 15px;
-    font-family: cursive;
+    /* font-family: cursive; */
     /* font-size: medium; */
 }

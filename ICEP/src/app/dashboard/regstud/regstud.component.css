@@ -13,3 +13,88 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.header
+{
+    height: 70px; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed;  /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+img
+{
+  z-index: 1; /* Stay on top */
+}
+
+  .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 14%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0;  /*z Stay on top */
+    /* top: 0; Stay at the top */
+    left: 0;
+    background-color: whitesmoke;  
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 70px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 20px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    background-color:black;
+  }
+
+  .sidenav a:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+
+
+  .main {
+    margin-left: 14%; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+   
+    background-color:white;
+    width: 86%;
+    height: 95%;
+     /*z-index: 1;  Stay on top */
+    /* top: 0;  Stay at the top */
+    padding-top: 80px;
+    margin-top: 80x;
+    /*top: 15; Stay at the top */
+    bottom: 0;
+    position: relative;
+    z-index: 0;  /*z Stay on top */
+  }
+
+  .footer
+  {
+    margin-left: 450px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 12px;}
+  }
+
+  .content
+  {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-left: 20px;
+    z-index: 0;
+    align-content: center;
+    background-color: whitesmoke;
+  }

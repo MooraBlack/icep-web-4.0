@@ -1,14 +1,14 @@
 .dash-page
 {
-    background-color: rgb(161, 159, 159);
+    background-color:white;
     height: 100vh;
     width: 100;
-    font-family: cursive;
-    font-size: medium;
+    /* font-family: cursive;
+    font-size: medium; */
 }
 nav a
 {
-    color: white;
+    color: Black;
 }
 h1
 {
@@ -17,7 +17,7 @@ h1
 h6
 {
     text-align: center;
-    color: white;
+    color: Black;
 }
 
 .mx-auto
@@ -57,5 +57,5 @@ form
 }
 label
 {
-    color: white;
+    color: Black;
 }
