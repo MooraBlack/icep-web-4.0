@@ -39,6 +39,11 @@ import { from } from 'rxjs';
 import { ApiService } from './api.service';
 import { AdminprofComponent } from './dashboard/adminprof/adminprof.component';
 import { RegstudComponent } from './dashboard/regstud/regstud.component';
+import { UpdateNoticeComponent } from './dashboard/notice-board/update-notice/update-notice.component';
+import { ViewNoticeComponent } from './dashboard/notice-board/view-notice/view-notice.component';
+import { DeleteNoticeComponent } from './dashboard/notice-board/delete-notice/delete-notice.component';
+import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/create-notice.component';
+
 
 
 
@@ -70,6 +75,11 @@ import { RegstudComponent } from './dashboard/regstud/regstud.component';
     NoticeBoardComponent,
     AdminprofComponent,
     RegstudComponent,
+    UpdateNoticeComponent,
+    ViewNoticeComponent,
+    DeleteNoticeComponent,
+    CreateNoticeComponent,
+
      ],
   imports: [
     BrowserModule,

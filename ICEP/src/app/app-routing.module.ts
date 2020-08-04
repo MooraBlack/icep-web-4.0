@@ -25,6 +25,10 @@ import { ApplicantsComponent } from './dashboard/applicants/applicants.component
 import { NoticeBoardComponent } from './dashboard/notice-board/notice-board.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 import { RegstudComponent } from './dashboard/regstud/regstud.component';
+import { UpdateNoticeComponent } from './dashboard/notice-board/update-notice/update-notice.component';
+import { ViewNoticeComponent } from './dashboard/notice-board/view-notice/view-notice.component';
+import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/create-notice.component';
+import { DeleteNoticeComponent } from './dashboard/notice-board/delete-notice/delete-notice.component';
 
 
 const routes: Routes = [
@@ -53,6 +57,10 @@ const routes: Routes = [
   {path: 'dashboard/report', component: ReportComponent},
   {path: 'dashboard/applicants', component: ApplicantsComponent},
   {path: 'dashboard/notice-board', component: NoticeBoardComponent},
+  {path: 'dashboard/notice-board/update-notice', component: UpdateNoticeComponent},//
+  {path: 'dashboard/notice-board/view-notice', component: ViewNoticeComponent},//
+  {path: 'dashboard/notice-board/create-notice', component: CreateNoticeComponent},//
+  {path: 'dashboard/notice-board/delete-notice', component: DeleteNoticeComponent},//
   {path: 'email-feedbac', component: EmailFeedbackComponent},
   {path: 'dashboard/regstud', component: RegstudComponent},
 

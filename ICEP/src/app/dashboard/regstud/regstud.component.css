@@ -30,32 +30,33 @@ img
   z-index: 1; /* Stay on top */
 }
 
-  .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 14%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 0;  /*z Stay on top */
-    /* top: 0; Stay at the top */
-    left: 0;
-    background-color: whitesmoke;  
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 70px;
-  }
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 14%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0;  /*z Stay on top */
+  /* top: 0; Stay at the top */
+  left: 0;
+  background-color: #111;  
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 70px;
+  font-size: small;
+}
 
-  .sidenav a {
-    padding: 6px 8px 6px 20px;
-    margin: 1px;
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    display: block;
-    background-color:black;
-  }
+.sidenav a {
+  padding: 6px 8px 6px 20px;
+  margin: 2px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  background-color:black;
+}
 
-  .sidenav a:hover {
-    color: white;
-    transform: scale(1.1);
-  }
+.sidenav a:hover {
+  color: white;
+  transform: scale(1.1);
+}
 
 
   .main {

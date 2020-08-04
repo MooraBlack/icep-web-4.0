@@ -1,0 +1,49 @@
+.main {
+    margin-left: 14%; /* Same width as the sidebar + left position in px */
+    /* font-size: 28px; Increased text to enable scrolling */
+    background-color:white;
+    width: 86%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom:10px;
+    bottom: 0;
+    position: fixed; 
+    z-index: 0;  /*z arrange on bottom */
+  }
+
+  div.scroll { 
+    margin:5px ;
+    padding-right:10px; 
+    width: 99%; 
+    height: 400px; 
+    overflow-x: hidden; 
+    overflow-x: auto; 
+    text-align:justify;
+  
+} 
+li
+{
+    list-style-type: none;
+}
+.row
+{
+    display: flex;
+    
+}
+
+.card
+{
+    margin: 13px;
+    height: fit-content; 
+}
+.notice
+{
+    padding: 20px 0 20px 0;
+    background-color: whitesmoke;
+}
+
+.card-header
+{
+    overflow: hidden;
+    z-index: 1;     /*Stay on top */
+}
