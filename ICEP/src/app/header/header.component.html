@@ -50,7 +50,7 @@
 <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
   <div class="container d-flex">
     <div class="contact-info mr-auto">
-      <p> Stay home, Stay safe! Visit <a routerLink="https://sacoronavirus.co.za/" style="color:white; text-align: center" target="_blank"> sacoronavirus.co.za </a> for official COVID-19 information. </p>
+      <p> Stay home, Stay safe! Visit <a href="https://sacoronavirus.co.za/" style="color:white; text-align: center" target="_blank"> sacoronavirus.co.za </a> for official COVID-19 information. </p>
     </div>
     <div class="social-links">
       <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -66,22 +66,22 @@
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
 
-    <h1 class="logo mr-auto"><a href="index.html">ICEP</a></h1>
+    <h1 class="logo mr-auto"><a routerLink="/home-page">ICEP</a></h1>
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
+    
+    
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a [routerLink]="['/']" fragment="hero">Home</a></li> 
         <li><a routerLink="/about-page">About</a></li>
         <li><a routerLink="/services-page">Services</a></li>
-        <li><a href="/about-page#Projects">Projects</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a routerLink="/contacts-page">Contact</a></li>
-
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a [routerLink]="['/']" fragment="team">Team</a></li>
+        <li> <a [routerLink] = "['/']"  fragment="contact"> Contact </a></li>
       </ul>
-      
     </nav><!-- .nav-menu -->
+
     <a class="nav-link"  routerLink="/login/login" ><i class="fa fa-user-circle"  aria-hidden="true"></i></a>
   </div>
 </header><!-- End Header -->

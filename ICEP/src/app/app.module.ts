@@ -7,7 +7,7 @@ import { FormsModule} from '@angular/forms';
 // added
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { SidebarModule } from 'ng-sidebar';
+import { SidebarModule } from 'ng-sidebar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,20 +32,16 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
 import { UserinforCardComponent } from './userinfor-card/userinfor-card.component';
-import { ReportComponent } from './dashboard/report/report.component';
-import { ApplicantsComponent } from './dashboard/applicants/applicants.component';
-import { NoticeBoardComponent } from './dashboard/notice-board/notice-board.component';
+import { ReportComponent } from './report/report.component';
+import { ApplicantsComponent } from './applicants/applicants.component';
+import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { from } from 'rxjs';
 import { ApiService } from './api.service';
 import { AdminprofComponent } from './dashboard/adminprof/adminprof.component';
 import { RegstudComponent } from './dashboard/regstud/regstud.component';
-import { UpdateNoticeComponent } from './dashboard/notice-board/update-notice/update-notice.component';
-import { ViewNoticeComponent } from './dashboard/notice-board/view-notice/view-notice.component';
-import { DeleteNoticeComponent } from './dashboard/notice-board/delete-notice/delete-notice.component';
-import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/create-notice.component';
 
 
-
+export const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -75,11 +71,6 @@ import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/cr
     NoticeBoardComponent,
     AdminprofComponent,
     RegstudComponent,
-    UpdateNoticeComponent,
-    ViewNoticeComponent,
-    DeleteNoticeComponent,
-    CreateNoticeComponent,
-
      ],
   imports: [
     BrowserModule,
@@ -88,8 +79,10 @@ import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/cr
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule,
-    // SidebarModule
+    RouterModule.forRoot(routes,{
+      anchorScrolling: 'enabled'
+    }),
+    SidebarModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
