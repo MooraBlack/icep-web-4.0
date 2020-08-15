@@ -1,9 +1,9 @@
 .notice
 {
     padding: 20px 0 20px 0;
-    background-color: rgb(144, 144, 144);
-    font-family: cursive;
-    font-size: medium;
+    background-color: whitesmoke;
+    /* font-family: cursive;
+    font-size: medium; */
 }
 p{
     color: black;
@@ -26,7 +26,7 @@ div.scroll {
 
 h3
 {
-    color: white;
+    color: #106eea;
 }
 
 
@@ -34,7 +34,8 @@ h3
 {
     margin: 13px;
     /* background-color: rgb(144, 144, 144); */
-    /* color: white; */   
+    /* color: white; */  
+    height: fit-content; 
 }
 .card:hover
 {

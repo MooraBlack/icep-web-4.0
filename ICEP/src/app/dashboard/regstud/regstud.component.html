@@ -1,72 +1,96 @@
-<div class="list row">
-  <div class="col-md-8">
-    <div class="input-group mb-3">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Search by title"
-        [(ngModel)]="lname"
-      />
-      <div class="input-group-append">
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          (click)="searchStud()"
-        >
-          Search
-        </button>
-      </div>
-    </div>
+<div class="dash-page ">
+  <!-- header -->
+  <div class="header justify-content-center">
+    <h3><a routerLink="/dashboard"><img src="/assets/pictures/ICEP-Logo.png" alt="Logo" style="width:80px;"></a>Welcome
+      To ICEP Dashboard</h3>
   </div>
-  <div class="col-md-6">
-    <h4>Registerd students
-    </h4>
-    <ul class="list-group">
-      <li
-        class="list-group-item"
-        *ngFor="let stud of students.results; let i = index"
-        [class.active]="i == currentIndex"
-        (click)="setActiveTStudent(stud, i)"
-      >
-        {{ stud.first_name }} - {{stud.last_name}}
-      </li>
-    </ul>
-
-    <button class="m-3 btn btn-sm btn-danger" >
-      Remove All
-    </button>
-  </div>
-  <div class="col-md-6">
-    <div *ngIf="currentStudent">
-      <h4>Student profile</h4>
-      <div>
-        <label><strong>Name:</strong></label> {{ currentStudent.first_name}}
-      </div>
-      <div>
-        <label><strong>Surname:</strong></label>
-        {{ currentStudent.last_name }}
-      </div>
-      <div>
-        <label><strong>Contact number:</strong></label>
-        {{ currentStudent.phone_no }}
-      </div>
-      <div>
-        <label><strong>Email Address:</strong></label>
-        {{ currentStudent.email }}
-      </div>
-      <div>
-        <label><strong>Status:</strong></label>
-        {{ currentStudent.published ? "Published" : "Pending" }}
-      </div>
 
 
-      <a class="badge badge-warning" href="/tutorials/{{ currentStudent.id }}">
-        Edit
-      </a>
-    </div>
-    <div *ngIf="!currentStudent">
-      <br />
-      <p>Please click on a Tutorial...</p>
+  <!-- Sidebar -->
+  <div class="sidenav ">
+    <a class="nav-link" routerLink="/dashboard" routerLinkActive="router-link-active"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+    <a class="nav-link" routerLink="/dashboard/notice-board" routerLinkActive="router-link-active"><i class="fa fa-flag" aria-hidden="true"></i> Notice Board</a>
+    <a class="nav-link" routerLink="/dashboard/report" routerLinkActive="router-link-active"><i class="fa fa-flag-checkered" aria-hidden="true"></i> View Reports</a>
+    <a class="nav-link" routerLink="/dashboard/regstud" routerLinkActive="router-link-active"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Registered Students</a>
+    <!-- <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>  -->
+
+  </div>
+
+  <!-- main -->
+  <div class="main">
+    <div class="content">
+
+      <div class="list row">
+        <div class="col-md-8">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by title" [(ngModel)]="lname" />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="searchStud()">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Registerd students
+          </h4>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let stud of students.results; let i = index"
+              [class.active]="i == currentIndex" (click)="setActiveTStudent(stud, i)">
+              {{ stud.first_name }} - {{stud.last_name}}
+            </li>
+          </ul>
+
+          <button class="m-3 btn btn-sm btn-danger">
+            Remove All
+          </button>
+        </div>
+
+        <div class="col-md-6">
+          <div *ngIf="currentStudent">
+            <h4>Student profile</h4>
+            <div>
+              <label><strong>Name:</strong></label> {{ currentStudent.first_name}}
+            </div>
+            <div>
+              <label><strong>Surname:</strong></label>
+              {{ currentStudent.last_name }}
+            </div>
+            <div>
+              <label><strong>Contact number:</strong></label>
+              {{ currentStudent.phone_no }}
+            </div>
+            <div>
+              <label><strong>Email Address:</strong></label>
+              {{ currentStudent.email }}
+            </div>
+            <div>
+              <label><strong>Status:</strong></label>
+              {{ currentStudent.published ? "Published" : "Pending" }}
+            </div>
+
+
+            <a class="badge badge-warning" href="/tutorials/{{ currentStudent.id }}">
+              Edit
+            </a>
+          </div>
+          <div *ngIf="!currentStudent">
+            <br />
+            <p>Please click on a Tutorial...</p>
+          </div>
+        </div>
+        
+      </div>
+
     </div>
   </div>
+
+  <!-- Footer -->
+  <div class="footer py-4">
+    <div class="copyright">
+      &copy;2020 <strong><span>Informatics Community Engagement Project</span></strong>. All Rights Reserved
+    </div>
+  </div>
+
 </div>

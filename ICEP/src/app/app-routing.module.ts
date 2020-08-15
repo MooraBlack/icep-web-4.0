@@ -19,14 +19,21 @@ import { ApplicationPageComponent } from './application-page/application-page.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserinforCardComponent } from './userinfor-card/userinfor-card.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ReportComponent } from './report/report.component';
-import { ApplicantsComponent } from './applicants/applicants.component';
-import { NoticeBoardComponent } from './notice-board/notice-board.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReportComponent } from './dashboard/report/report.component';
+import { ApplicantsComponent } from './dashboard/applicants/applicants.component';
+import { NoticeBoardComponent } from './dashboard/notice-board/notice-board.component';
 import { EmailFeedbackComponent } from './email-feedback/email-feedback.component';
+import { RegstudComponent } from './dashboard/regstud/regstud.component';
+import { UpdateNoticeComponent } from './dashboard/notice-board/update-notice/update-notice.component';
+import { ViewNoticeComponent } from './dashboard/notice-board/view-notice/view-notice.component';
+import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/create-notice.component';
+import { DeleteNoticeComponent } from './dashboard/notice-board/delete-notice/delete-notice.component';
 
 
 const routes: Routes = [
   {path:  '' , redirectTo: 'home-page', pathMatch: 'full'},
+  {path: 'page-not-found', component: PageNotFoundComponent},//add page not found route
   {path: 'admin-login-page', component: AdminLoginPageComponent},
   {path: 'home-page', component: HomePageComponent},
   {path: 'main', component: MainComponent},
@@ -46,17 +53,22 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'userinfor-card', component: UserinforCardComponent},
   {path: 'gallery', component: GalleryComponent},
-  {path: 'report', component: ReportComponent},
-  {path: 'applicants', component: ApplicantsComponent},
-  {path: 'notice-board', component: NoticeBoardComponent},
-  {path: 'email-feedbac', component: EmailFeedbackComponent},
 
+  {path: 'dashboard/report', component: ReportComponent},
+  {path: 'dashboard/applicants', component: ApplicantsComponent},
+  {path: 'dashboard/notice-board', component: NoticeBoardComponent},
+  {path: 'dashboard/notice-board/update-notice', component: UpdateNoticeComponent},//
+  {path: 'dashboard/notice-board/view-notice', component: ViewNoticeComponent},//
+  {path: 'dashboard/notice-board/create-notice', component: CreateNoticeComponent},//
+  {path: 'dashboard/notice-board/delete-notice', component: DeleteNoticeComponent},//
+  {path: 'email-feedbac', component: EmailFeedbackComponent},
+  {path: 'dashboard/regstud', component: RegstudComponent},
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled' // Scroll to top on every Route click
+    scrollPositionRestoration: 'top' // Scroll to top on every Route click
 
   })],
   exports: [RouterModule]

@@ -1,7 +1,8 @@
 .page
 {
-    font-family: cursive;
-    font-size: medium;
+    /* font-family: cursive;
+    font-size: medium; */
+    background-color: white;
 }
 
 
@@ -9,29 +10,30 @@
 {
     text-align: center;
     margin: 0 0 20px 0;
-    padding: 110px 0 20px 0;
-    background-color: rgb(144, 144, 144);
-    color: white;
+    padding: 150px 0 20px 0;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .infor
 {
     margin: 20px 0 20px 0;
-    background-color: rgb(144, 144, 144);
+    background-color: whitesmoke;
 }
 
 .card
 {
-    margin:  20px 20px 20px 20px;
+    margin:  10px 10px 10px 10px;
     height: auto;
-    background-color:rgb(95, 94, 94);
+    background-color:#106eea;
     color: white;
+    height: fit-content;
 }
 
 .card:hover
 {
-    /* background-color: rgb(144, 144, 144);
-    color: black; */
+    /* background-color: whitesmoke; */
+    color: white;
     transition: transform 0.9s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }

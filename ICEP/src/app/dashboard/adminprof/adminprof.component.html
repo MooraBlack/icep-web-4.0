@@ -1,20 +1,24 @@
 <div class="dash-page ">
-  <!-- header -->
-  <div class="header justify-content-center">
-      <h3><a routerLink="/dashboard"><img src="/assets/pictures/ICEP-Logo.png" alt="Logo" style="width:80px;"></a>Welcome To ICEP Dashboard</h3>
-  </div>
+    <!-- header -->
+    <div class="header justify-content-center">
+        <h3><a routerLink="/dashboard"><img src="/assets/pictures/ICEP-Logo.png" alt="Logo"
+                    style="width:80px;"></a>Welcome To ICEP Dashboard</h3>
+    </div>
 
 
-  <!-- Sidebar -->
-  <div class="sidenav bg-dark">
-          <a class="nav-link" routerLink="/dashboard"  routerLinkActive="router-link-active" >Dashboard</a>
-          <a class="nav-link" routerLink="/applicants"  routerLinkActive="router-link-active" >View Applicants</a>
-          <a class="nav-link" routerLink="/report"  routerLinkActive="router-link-active" >View Reports</a>
-          <a class="nav-link" routerLink="/notice-board"  routerLinkActive="router-link-active" >Notice board</a>
-          <!-- <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>  -->
+     <!-- Sidebar -->
+  <div class="sidenav ">
+    <a class="nav-link" routerLink="/dashboard" routerLinkActive="router-link-active"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+    <a class="nav-link" routerLink="/dashboard/notice-board" routerLinkActive="router-link-active"><i class="fa fa-flag" aria-hidden="true"></i> Notice Board</a>
+    <a class="nav-link" routerLink="/dashboard/report" routerLinkActive="router-link-active"><i class="fa fa-flag-checkered" aria-hidden="true"></i>View Reports</a>
+    <a class="nav-link" routerLink="/dashboard/regstud" routerLinkActive="router-link-active"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Registered Students</a>
+    <!-- <a class="nav-link" routerLink="/application-page"  routerLinkActive="router-link-active" >Apply</a>  -->
 
-          <!-- Footer -->
-          <div class="footer">
-              <app-footer></app-footer>
-          </div>
-  </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+</div>
