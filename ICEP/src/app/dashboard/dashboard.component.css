@@ -40,6 +40,7 @@ img
   .sidenav a:hover {
     color: white;
     transform: scale(1.1);
+    box-shadow: 0px 0px 3px white;
   }
 
 
@@ -47,16 +48,16 @@ img
     margin-left: 14%; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
    
-    background-color:white;
+    background-color:grey;
     width: 86%;
-    height: 95%;
+    height: 100vh;
      /*z-index: 1;  Stay on top */
     /* top: 0;  Stay at the top */
     padding-top: 80px;
     margin-top: 80x;
     /*top: 15; Stay at the top */
     bottom: 0;
-    position: relative;
+    position: fixed;
     z-index: 0;  /*z Stay on top */
   }
 

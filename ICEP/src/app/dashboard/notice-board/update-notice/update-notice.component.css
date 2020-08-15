@@ -11,7 +11,7 @@
     z-index: 0;  /*z arrange on bottom */
   }
 
-  div.scroll { 
+div.scroll { 
     margin:5px ;
     padding-right:10px; 
     width: 99%; 
@@ -19,21 +19,17 @@
     overflow-x: hidden; 
     overflow-x: auto; 
     text-align:justify;
-    display: flex;
-    position: relative;
+  
 } 
-.row
-{ 
-    /* overflow: hidden; */
-    z-index: 1; 
-}
-
-ul
+li
 {
     list-style-type: none;
-   
 }
-
+.row
+{
+    display: flex;
+    
+}
 
 .card
 {
@@ -44,7 +40,6 @@ ul
 {
     padding: 20px 0 20px 0;
     background-color: whitesmoke;
-    
 }
 
 .card-header

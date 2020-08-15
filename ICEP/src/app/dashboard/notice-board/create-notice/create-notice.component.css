@@ -11,23 +11,19 @@
     z-index: 0;  /*z arrange on bottom */
   }
 
-  div.scroll { 
+div.scroll { 
     margin:5px ;
     padding-right:10px; 
     width: 99%; 
     height: 400px; 
-    overflow-x: hidden; 
-    overflow-x: auto; 
+    /* overflow-x: hidden;  */
+    /* overflow-x: auto;  */
     text-align:justify;
   
 } 
 li
 {
     list-style-type: none;
-}
-label
-{
-    font-size: large;
 }
 .row
 {
