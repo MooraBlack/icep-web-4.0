@@ -42,11 +42,11 @@
   #hero h1 {
     margin: 0;
     font-size: 48px;
-   /* font-weight: 700; */
+    font-weight: 800;
     line-height: 56px;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    font-weight: boldest;
+    
   }
   
   #hero h1 span {

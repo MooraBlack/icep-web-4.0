@@ -64,6 +64,13 @@ a:hover
   text-decoration: underline;
 }
 
+#topbar .contact-info p {
+  margin-left: 25px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+}
+
 #topbar .contact-info i {
   padding-right: 4px;
   margin-left: 15px;
