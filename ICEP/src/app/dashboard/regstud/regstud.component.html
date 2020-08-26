@@ -87,26 +87,26 @@
         <!-- Registered students -->
 
         <div class="col-md-6">
-          <div *ngFor="currentStudent">
+          <div *ngFor="let cS of currentStudent">
             <h4>Student profile</h4>
             <div>
-              <label><strong>Name:</strong></label> {{ currentStudent.first_name}}
+              <label><strong>Name:</strong></label> {{ cS.first_name}}
             </div>
             <div>
               <label><strong>Surname:</strong></label>
-              {{ currentStudent.last_name }}
+              {{ cS.last_name }}
             </div>
             <div>
               <label><strong>Contact number:</strong></label>
-              {{ currentStudent.phone_no }}
+              {{ cS.phone_no }}
             </div>
             <div>
               <label><strong>Email Address:</strong></label>
-              {{ currentStudent.email }}
+              {{ cS.email }}
             </div>
             <div>
               <label><strong>Status:</strong></label>
-              {{ currentStudent.published ? "Published" : "Pending" }}
+              {{ cS.published ? "Published" : "Pending" }}
             </div>
 
 

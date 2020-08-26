@@ -1,34 +1,72 @@
 .dash-page
 {
     background-color:white;
-    height: 100vh;
-    width: 100;
-    /* font-family: cursive;
-    font-size: medium; */
+    height: 100%;
+    width: 100%;
+    background: url("/assets/pictures/icep-bg.jpg") top left;
+    background-size: cover;
+    position: relative;
+    
 }
-nav a
+.row
 {
-    color: Black;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
+
+.card
+{
+  /* width: fit-content; */
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 80px;
+  margin-top: 230px;
+}
+
+
+ul
+{
+  
+  overflow: hidden;
+}
+li 
+{
+  float: right;
+  list-style-type: none;
+}
+li a 
+{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: 
+rgb(163, 163, 163);
+}
+li :active {
+  background-color: 
+rgb(163, 163, 163);
+}
+
 h1
 {
     text-align: center;
 }
+
 h6
 {
     text-align: center;
-    color: Black;
+    color: white;
 }
 
 .mx-auto
 {
     image-orientation: unset;
 }
-nav
-{
-  display: flex;
-  justify-content: center;
-}
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -44,10 +82,10 @@ nav
     font-size: 3.5rem;
   }
 }
-form
+/* form
 {
   margin: 0px 465px;
-}
+} */
 
 .form-signin {
   width: 100%;
@@ -55,7 +93,9 @@ form
   padding: 15px;
   margin: auto;
 }
+
 label
 {
-    color: Black;
+    color: white;
+    font-size: 12px;
 }
