@@ -52,71 +52,74 @@
 -->
 <!-- Modal end -->
 <div class="dash-page">
-  <div class="text-center">
-    <a routerLink="/"><img src="/assets/pictures/ICEP-Logo.png" alt="" width="150" height="150"></a>
-  </div>
-
-  <nav>
-    <hr class="divider my-4">
-    <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
-    <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
-    <a class="nav-link" routerLink="/login/login" routerLinkActive="router-link-active">Login</a>
-    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Application">Apply</a>
-    <a class="nav-link" routerLink="/register-page" routerLinkActive="router-link-active">Register</a>
-    <!--a class="nav-link btn" type="button" data-toggle="modal" data-target="#Registration">Register</a-->
-    <hr class="divider my-4">
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+    <ul class="navbar ">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login/login" routerLinkActive="router-link-active">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/register-page" routerLinkActive="router-link-active">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn" data-toggle="modal" data-target="#Application">Apply</a>
+      </li>
+    </ul>
+    <img class="navbar-brand" src="/assets/pictures/ICEP-Logo.png" alt="" width="70" height="70">
   </nav>
 
-  <hr class="divider mx-8">
-  <h3>Intern - Registration</h3>
 
+  <div class="row">
+    <div class="card bg-dark">
+      <form class="form-signin">
+        <h3>Intern - Registration</h3>
+        <div class="form-label-group">
+          <label for="inputFirst_name">First Name</label>
+          <input type="text" id="inputFirst_name" name="first_name" class="form-control" placeholder="first_name"
+            required autofocus [(ngModel)]='user.first_name'>
+
+        </div>
+
+        <div class="form-label-group">
+          <label for="inputLast_name">Last Name</label>
+          <input type="text" id="inputLast_name" name="last_name" class="form-control" placeholder="last_name" required
+            autofocus [(ngModel)]='user.last_name'>
+
+        </div>
+
+        <div class="form-label-group">
+          <label for="inputPhone">Cellphone</label>
+          <input type="text" id="inputPhone" name="phone_no" class="form-control" placeholder="000 000 0000" required
+            autofocus [(ngModel)]='user.phone_no'>
+
+        </div>
+
+        <div class="form-label-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required
+            autofocus [(ngModel)]='user.email'>
+
+        </div>
+
+        <div class="form-label-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required
+            [(ngModel)]='user.password'>
+        </div>
+        <br>
+        <button class="btn btn-lg btn-secondary btn-block" (click)="register()">Register</button>
+
+      </form>
+    </div>
+  </div>
   <div>
 
-    <form class="form-signin">
 
-      <div class="form-label-group">
-        <label for="inputFirst_name">First Name</label>
-        <input type="text" id="inputFirst_name" name= "first_name" class="form-control" placeholder="first_name" required autofocus
-        [(ngModel)] = 'user.first_name'>
-
-      </div>
-
-      <div class="form-label-group">
-        <label for="inputLast_name">Last Name</label>
-        <input type="text" id="inputLast_name" name= "last_name" class="form-control" placeholder="last_name" required autofocus
-        [(ngModel)] = 'user.last_name'>
-
-      </div>
-
-      <div class="form-label-group">
-        <label for="inputPhone">Cellphone</label>
-        <input type="text" id="inputPhone" name= "phone_no" class="form-control" placeholder="000 000 0000" required autofocus
-        [(ngModel)] = 'user.phone_no'>
-
-      </div>
-
-      <div class="form-label-group">
-        <label for="email">Email address</label>
-        <input type="email" id="email" name= "email" class="form-control" placeholder="Email address" required autofocus
-        [(ngModel)] = 'user.email'>
-
-      </div>
-
-      <div class="form-label-group">
-        <label for="inputPassword">Password</label>
-        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required
-        [(ngModel)] = 'user.password'>
-      </div>
-
-      <!-- <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div> -->
-<br>
-      <button class="btn btn-lg btn-dark btn-block" (click)="register()">Sign in</button>
-      <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p> -->
-    </form>
 
   </div>
 

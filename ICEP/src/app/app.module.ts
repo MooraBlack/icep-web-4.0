@@ -42,6 +42,8 @@ import { UpdateNoticeComponent } from './dashboard/notice-board/update-notice/up
 import { ViewNoticeComponent } from './dashboard/notice-board/view-notice/view-notice.component';
 import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/create-notice.component';
 import { DeleteNoticeComponent } from './dashboard/notice-board/delete-notice/delete-notice.component';
+import { AdminComponent } from './dashboard/admin/admin.component';
+import { UserComponent } from './dashboard/user/user.component';
 
 export const routes: Routes = [];
 
@@ -77,6 +79,8 @@ export const routes: Routes = [];
     ViewNoticeComponent,
     CreateNoticeComponent,
     DeleteNoticeComponent,
+    AdminComponent,
+    UserComponent,
      ],
   imports: [
     BrowserModule,

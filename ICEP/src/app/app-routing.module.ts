@@ -29,6 +29,7 @@ import { UpdateNoticeComponent } from './dashboard/notice-board/update-notice/up
 import { ViewNoticeComponent } from './dashboard/notice-board/view-notice/view-notice.component';
 import { CreateNoticeComponent } from './dashboard/notice-board/create-notice/create-notice.component';
 import { DeleteNoticeComponent } from './dashboard/notice-board/delete-notice/delete-notice.component';
+import { UserComponent } from './dashboard/user/user.component';
 
 
 const routes: Routes = [
@@ -63,12 +64,13 @@ const routes: Routes = [
   {path: 'dashboard/notice-board/delete-notice', component: DeleteNoticeComponent},//
   {path: 'email-feedbac', component: EmailFeedbackComponent},
   {path: 'dashboard/regstud', component: RegstudComponent},
+  {path: 'dashboard/user', component: UserComponent},
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'top' // Scroll to top on every Route click
+    scrollPositionRestoration: 'enabled' // On Load Scroll to top | enabled | disabled on every Route click
 
   })],
   exports: [RouterModule]

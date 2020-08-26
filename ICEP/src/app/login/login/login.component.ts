@@ -6,7 +6,7 @@ import {AuthenticationService } from '../../_services/authentication.service';
 import { AlertService } from '../../_services/alert.service';
 
 @Component({
-    templateUrl: 'login.component.html',
+    templateUrl: './login.component.html',
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     ) {
         // redirect to home if already logged in
         if (this.authenticationService.currentUserValue) {
-            this.router.navigate(['/']);
+            this.router.navigate(['dashboard/user']);
         }
     }
 
@@ -64,9 +64,10 @@ export class LoginComponent implements OnInit {
                     this.loading = false;
                 });
     }
-    home(){
+
+    home()
+    {
       this.router.navigateByUrl('home-page');
     }
-
-
+   
 }

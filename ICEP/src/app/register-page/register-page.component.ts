@@ -22,7 +22,7 @@ export class RegisterPageComponent implements OnInit {
  };
  submitted: false;
 
-  constructor(private apiService: ApiService) {
+  constructor(private apiService: ApiService, private router: Router) {
 
    }
 
@@ -30,7 +30,8 @@ export class RegisterPageComponent implements OnInit {
   }
 
 
-  register(){
+  register()
+  {
     const data = {
       first_name: this.user.first_name,
       last_name: this.user.last_name,
@@ -40,7 +41,7 @@ export class RegisterPageComponent implements OnInit {
     };
 
     this.apiService.createReg(data).subscribe(response => {console.log(response); } , error => console.log(error));
-
+    this.router.navigateByUrl('home-page');
   }
   newReg(){
     this.submitted = false;

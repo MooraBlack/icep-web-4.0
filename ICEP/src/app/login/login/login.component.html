@@ -1,48 +1,50 @@
 <div class="dash-page">
-  <div class="text-center">
-    <a routerLink="/"><img src="/assets/pictures/ICEP-Logo.png" alt="" width="150" height="150"></a>
-  </div>
-
-  <nav>
-    <hr class="divider my-4">
-    <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
-    <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
-    <a class="nav-link" routerLink="/login" routerLinkActive="router-link-active">Login</a>
-    <a class="nav-link btn" type="button" data-toggle="modal" data-target="#Application">Apply</a>
-    <a class="nav-link" routerLink="/register-page" routerLinkActive="router-link-active">Register</a>
-    <!--a class="nav-link btn" type="button" data-toggle="modal" data-target="#Registration">Register</a-->
-    <hr class="divider my-4">
+  
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+    <ul class="navbar ">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-login-page" routerLinkActive="router-link-active">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login" routerLinkActive="router-link-active">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/register-page" routerLinkActive="router-link-active">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn" data-toggle="modal" data-target="#Application">Apply</a>
+      </li>
+    </ul>
+    <img class="navbar-brand" src="/assets/pictures/ICEP-Logo.png" alt="" width="70" height="70">
   </nav>
 
-  <hr class="divider mx-8">
-  <h6>User Login</h6>
-
-  <div>
-
-    <form class="form-signin">
-
+ 
+<div class="row">
+  <div class="card bg-dark">
+    <form class="form-signin" >
+      <h6 class="form-header">User Dashboard Login</h6>
       <div class="form-label-group">
-        <label for="inputEmail">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputEmail">Username</label>
+        <input type="username" id="inputUsername" class="form-control" placeholder="-----------"  autofocus>
 
       </div>
 
       <div class="form-label-group">
         <label for="inputPassword">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="inputPassword" class="form-control" placeholder="*********" >
       </div>
+      <br>
 
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
 
-      <button class="btn btn-lg btn-dark btn-block" type="submit" (click)="home()">Login</button>
-      <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p> -->
+      <button class="btn btn-secondary btn-block" type="submit" (click)="onSubmit()">Login</button>
+      <!-- <small class="mt-5 mb-3 text-muted text-light">&copy; 2017-2020</small> -->
     </form>
-
   </div>
+</div>
+
 
   <!-- <app-register-page></app-register-page> -->
   <app-application-page></app-application-page>
