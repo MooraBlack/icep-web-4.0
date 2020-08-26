@@ -6,7 +6,7 @@ import {AuthenticationService } from '../../_services/authentication.service';
 import { AlertService } from '../../_services/alert.service';
 
 @Component({
-    templateUrl: 'login.component.html',
+    templateUrl: './login.component.html',
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
@@ -66,6 +66,9 @@ export class LoginComponent implements OnInit {
     }
     home(){
       this.router.navigateByUrl('home-page');
+    }
+    logout(){
+        this.router.navigateByUrl('home-page');
     }
 
     

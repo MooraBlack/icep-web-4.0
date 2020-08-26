@@ -18,10 +18,10 @@ div.scroll {
     margin:5px ;
     padding-right:10px; 
     width: 99%; 
-    height: 400px; 
-    overflow-x: hidden; 
-    overflow-x: auto; 
+    height: 300px; 
+    overflow: auto; 
     text-align:justify;
+    justify-items: center;
 } 
 
 h3

@@ -45,7 +45,7 @@
     margin-left: 14%; /* Same width as the sidebar + left position in px */
     /* font-size: 28px; Increased text to enable scrolling */
     padding: 0px 10px;
-    background-color:white;
+    background-color:grey;
     width: 86%;
     height: 90%;
      /*z-index: 1;  Stay on top */

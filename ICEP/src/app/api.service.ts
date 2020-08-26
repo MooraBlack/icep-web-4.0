@@ -18,6 +18,8 @@ export class ApiService {
   getAdminProf(){
     return this.http.get(adminProfileUrl);
   }
+
+  
   getAllReg(){
    return this.http.get(studProfUrl);
   }
@@ -37,6 +39,8 @@ export class ApiService {
   deleteAllReg(){
     this.http.delete(studProfUrl);
   }
+
+
 
   getAllApplication(){
     this.http.get(applicationUrl);

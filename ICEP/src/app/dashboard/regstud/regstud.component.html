@@ -53,7 +53,7 @@
 
 
         <!-- Registered students -->
-        <div class="tbl">
+        <div class="tbl" >
           <table class="table table-sm">
             <thead class="thead-dark">
               <tr>
@@ -63,12 +63,13 @@
                 <th scope="col">Email:</th>
                 <th scope="col">Phone No:</th>
                 <th scope="col">Registration Status:</th>
+                <th scope="col"><button type="button" class="btn btn-outline-light btn-sm" (click)="refreshList()">Refresh List</button></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody *ngIf="currentStudent">
 
               <!-- table row -->
-              <div *ngIf="currentStudent">
+              <div >
                 <tr>
                   <th scope="row"></th>
                   <td>{{ currentStudent.first_name}}</td>
@@ -86,7 +87,7 @@
         <!-- Registered students -->
 
         <div class="col-md-6">
-          <div *ngIf="currentStudent">
+          <div *ngFor="currentStudent">
             <h4>Student profile</h4>
             <div>
               <label><strong>Name:</strong></label> {{ currentStudent.first_name}}
