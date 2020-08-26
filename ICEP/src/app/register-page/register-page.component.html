@@ -76,46 +76,40 @@
 
       <div class="form-label-group">
         <label for="inputFirst_name">First Name</label>
-        <input type="text" id="inputFirst_name" name= "first_name" class="form-control" placeholder="first_name" required autofocus
-        [(ngModel)] = 'user.first_name'>
+        <input type="text" id="inputFirst_name" name="first_name" class="form-control" placeholder="first_name" required
+          autofocus [(ngModel)]='user.first_name'>
 
       </div>
 
       <div class="form-label-group">
         <label for="inputLast_name">Last Name</label>
-        <input type="text" id="inputLast_name" name= "last_name" class="form-control" placeholder="last_name" required autofocus
-        [(ngModel)] = 'user.last_name'>
+        <input type="text" id="inputLast_name" name="last_name" class="form-control" placeholder="last_name" required
+          autofocus [(ngModel)]='user.last_name'>
 
       </div>
 
       <div class="form-label-group">
         <label for="inputPhone">Cellphone</label>
-        <input type="text" id="inputPhone" name= "phone_no" class="form-control" placeholder="000 000 0000" required autofocus
-        [(ngModel)] = 'user.phone_no'>
+        <input type="text" id="inputPhone" name="phone_no" class="form-control" placeholder="000 000 0000" required
+          autofocus [(ngModel)]='user.phone_no'>
 
       </div>
 
       <div class="form-label-group">
         <label for="email">Email address</label>
-        <input type="email" id="email" name= "email" class="form-control" placeholder="Email address" required autofocus
-        [(ngModel)] = 'user.email'>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus
+          [(ngModel)]='user.email'>
 
       </div>
 
       <div class="form-label-group">
         <label for="inputPassword">Password</label>
         <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required
-        [(ngModel)] = 'user.password'>
+          [(ngModel)]='user.password'>
       </div>
+      <br>
+      <button class="btn btn-lg btn-dark btn-block" (click)="register()">Register</button>
 
-      <!-- <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div> -->
-<br>
-      <button class="btn btn-lg btn-dark btn-block" (click)="register()">Sign in</button>
-      <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p> -->
     </form>
 
   </div>

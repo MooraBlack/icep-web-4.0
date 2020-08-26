@@ -18,7 +18,7 @@ div.scroll {
     margin:5px ;
     padding-right:10px; 
     width: 99%; 
-    height: 300px; 
+    height: 400px; 
     overflow-x: hidden; 
     overflow-x: auto; 
     text-align:justify;
@@ -36,6 +36,7 @@ h3
     /* background-color: rgb(144, 144, 144); */
     /* color: white; */  
     height: fit-content; 
+    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
 }
 .card:hover
 {

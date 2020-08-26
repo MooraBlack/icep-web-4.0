@@ -1,0 +1,113 @@
+.header
+{
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed;  /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+img
+{
+  z-index: 1; /* Stay on top */
+}
+.col-2
+{
+    position: relative;
+    z-index: 0;
+    top: 0; /* Stay at the top */
+}
+
+.col-10
+{
+    position: relative;
+}
+
+/* .tab-pane
+{
+    position: relative;
+} */
+
+
+/* 
+  .sidenav a {
+    padding: 6px 8px 6px 20px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    background-color:black;
+  } */
+/* 
+  .sidenav a:hover {
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px white;
+  } */
+
+
+  .main {
+    margin-left: 14%; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+   
+    background-color:grey;
+    width: 86%;
+    height: 100vh;
+     /*z-index: 1;  Stay on top */
+    /* top: 0;  Stay at the top */
+    padding-top: 80px;
+    margin-top: 80x;
+    /*top: 15; Stay at the top */
+    bottom: 0;
+    position: fixed;
+    z-index: 0;  /*z Stay on top */
+  }
+
+  .footer
+  {
+    margin-left: 450px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .usercard
+  {
+    padding: 5px;
+    margin: 5px;
+    z-index: 0;
+  }
+.tab-pane
+{
+    width: 100%;
+    height: 90vh;
+    background: url("/assets/pictures/icep-bg.jpg") top left;
+    background-size: cover;
+    position: relative;
+}
+
+.right-tab
+{
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 100%;
+    height: 90vh;
+    background: url("/assets/pictures/icep-bg.jpg") top left;
+    background-size: cover;
+    position: relative;
+}
+.usercard
+{
+  height: fit-content;
+}
+

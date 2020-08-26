@@ -1,7 +1,7 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 80%;
+  width: 100%;
 }
 
 td, th {
@@ -56,13 +56,14 @@ img
 .sidenav a:hover {
   color: white;
   transform: scale(1.1);
+  box-shadow: 0px 0px 3px white;
 }
 
 
   .main {
     margin-left: 14%; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
-   
+    align-items: center;
     background-color:white;
     width: 86%;
     height: 95%;
@@ -99,3 +100,4 @@ img
     align-content: center;
     background-color: whitesmoke;
   }
+
