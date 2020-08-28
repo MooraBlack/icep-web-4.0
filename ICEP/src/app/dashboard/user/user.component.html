@@ -16,16 +16,21 @@
                 <a class="list-group-item list-group-item-action " id="list-settings-list" data-toggle="list"
                     href="#list-settings" role="tab" aria-controls="settings">
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i> Notice Board</a>
+                <br>
+                <a class="list-group-item list-group-item-action bg-danger text-light" id="list-logout" data-toggle="list"
+                routerLink="/login/login" role="tab" aria-controls="logout">
+                    <i class="fa fa-power" aria-hidden="true"></i> Logout</a>
             </div>
         </div>
 
         <div class="col-10">
             <div class="tab-content" id="nav-tabContent">
-
+                <!-- home -->
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                     <app-main></app-main>
                 </div>
 
+                <!-- User profile -->
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
 
                     <div class="right-tab">
@@ -33,31 +38,33 @@
                         <div class="card">
                             <h5 class="card-header">User Profile: </h5>
                             <div class="card-body">
-                              <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <label for="first_name">First Name: Mo</label><br>
-                              <label for="last_name">Last Name: mamamamadi</label><br>
-                              <label for="phone_no">Phone Number: 014 151 4848</label><br>
-                              <label for="email">E-mail: mail@mail.com</label><br>
-                              <label for="Password">Active Password: ***********</label><br>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <label for="first_name">First Name: Mo</label><br>
+                                <label for="last_name">Last Name: mamamamadi</label><br>
+                                <label for="phone_no">Phone Number: 014 151 4848</label><br>
+                                <label for="email">E-mail: mail@mail.com</label><br>
+                                <label for="Password">Active Password: ***********</label><br>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
 
                 </div>
+
+                 <!-- report modal -->
                 <div class="tab-pane fade" id="list-report" role="tabpanel" aria-labelledby="list-report-list">
 
                     <div class="right-tab">
                         <!-- report modal -->
 
-
-
                         <div class="card">
                             <h5 class="card-header">Write Your Report here...</h5>
                             <div class="card-body">
                                 <h5 class="card-title">Reminder</h5>
-                                <p class="card-text">It's import to write your daily log, Help the development team and the lead team review your work.</p>
+                                <p class="card-text">It's import to write your daily log, Help the development team and
+                                    the lead team review your work.</p>
 
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
@@ -113,8 +120,6 @@
                                                     </div>
                                                 </div>
 
-
-
                                             </div>
 
                                             <div class="modal-footer">
@@ -131,16 +136,18 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- report modal -->
+                        <!-- report modal end-->
                     </div>
 
                 </div>
-
+                
+                <!-- Notice board -->
                 <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
                     <div class="right-tab">
                         <app-ad-posts></app-ad-posts>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

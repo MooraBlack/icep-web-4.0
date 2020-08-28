@@ -100,7 +100,13 @@
   height: 440px; 
   overflow-x: hidden; 
   overflow-x: auto; 
-  text-align:justify;
+  /* text-align:justify; */
+  
+}
+.list-group ul li
+{
+ float: left;
+  list-style-type: none;
 }
 
 span
